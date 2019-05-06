@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nikita Shatskiy](https://up.htmlacademy.ru/htmlcss/25/user/966601).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Шабельников](https://htmlacademy.ru/profile/hulkaton).
 
 ---
 
