@@ -67,31 +67,43 @@
           <li class="sorting-button-down"><img src="/img/down.svg" alt="Cнизу" width="auto" height="auto"></li>
         </ul>
         <span>Цена</span>
-        <form action="" method="POST">
+        <form action="" method="GET">
           <!-- Тут будет форма с ползунками в которой я предвосхищаю использование JavaScript'а -->
-          <span>Производители</span>
+          <span>Производители:</span>
           <ul class="manufacturers">
-              <li>
-                <input type="checkbox" id="bosch" value="bosch" checked>
-                <label for="bosch">BOSCH</label>
-              </li>
-              <li>
-                <input type="checkbox" id="interskol" value="interskol">
-                <label for="interskol">ИНТЕРСКОЛ</label>
-              </li>
-              <li>
-                <input type="checkbox" id="makita" value="makita" checked>
-                <label for="makita">MAKITA</label>
-              </li>
-              <li>
-                <input type="checkbox" id="dewalt" value="dewalt">
-                <label for="dewalt">DEWALT</label>
-              </li>
-              <li>
-                <input type="checkbox" id="hitachi" value="hitachi">
-                <label for="hitachi">HITACHI</label>
-              </li>
+            <li>
+              <input type="checkbox" id="bosch" value="bosch" checked>
+              <label for="bosch">BOSCH</label>
+            </li>
+            <li>
+              <input type="checkbox" id="interskol" value="interskol">
+              <label for="interskol">ИНТЕРСКОЛ</label>
+            </li>
+            <li>
+              <input type="checkbox" id="makita" value="makita" checked>
+              <label for="makita">MAKITA</label>
+            </li>
+            <li>
+              <input type="checkbox" id="dewalt" value="dewalt">
+              <label for="dewalt">DEWALT</label>
+            </li>
+            <li>
+              <input type="checkbox" id="hitachi" value="hitachi">
+              <label for="hitachi">HITACHI</label>
+            </li>
           </ul>
+          <span>Питание:</span>
+          <ul class="power-type">
+            <li>
+              <input type="checkbox" id="batteries" value="batteries" checked>
+              <label for="batteries">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="checkbox" id="mains-power" value="mains-power">
+              <label for="mains-power">Сетевые</label>
+            </li>
+          </ul>
+          <input type="submit" value="Показать">
         </form>
       </section>
     </main>
