@@ -67,41 +67,48 @@
         </ul>
         <span>Цена</span>
         <form action="" method="GET">
-          <!-- Тут будет форма с ползунками в которой я предвосхищаю использование JavaScript'а -->
-          <span>Производители:</span>
-          <ul class="manufacturers">
-            <li>
-              <input type="checkbox" id="bosch" value="bosch" checked>
-              <label for="bosch">BOSCH</label>
-            </li>
-            <li>
-              <input type="checkbox" id="interskol" value="interskol">
-              <label for="interskol">ИНТЕРСКОЛ</label>
-            </li>
-            <li>
-              <input type="checkbox" id="makita" value="makita" checked>
-              <label for="makita">MAKITA</label>
-            </li>
-            <li>
-              <input type="checkbox" id="dewalt" value="dewalt">
-              <label for="dewalt">DEWALT</label>
-            </li>
-            <li>
-              <input type="checkbox" id="hitachi" value="hitachi">
-              <label for="hitachi">HITACHI</label>
-            </li>
-          </ul>
-          <span>Питание:</span>
-          <ul class="power-type">
-            <li>
-              <input type="checkbox" id="batteries" value="batteries" checked>
-              <label for="batteries">Аккумуляторные</label>
-            </li>
-            <li>
-              <input type="checkbox" id="mains-power" value="mains-power">
-              <label for="mains-power">Сетевые</label>
-            </li>
-          </ul>
+          <fieldset>
+            <legend>Цена</legend>
+            <!-- Тут будет форма с ползунками в которой я предвосхищаю использование JavaScript'а -->
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul class="manufacturers">
+              <li>
+                <input type="checkbox" id="bosch" value="bosch" checked>
+                <label for="bosch">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" id="interskol" value="interskol">
+                <label for="interskol">ИНТЕРСКОЛ</label>
+              </li>
+              <li>
+                <input type="checkbox" id="makita" value="makita" checked>
+                <label for="makita">MAKITA</label>
+              </li>
+              <li>
+                <input type="checkbox" id="dewalt" value="dewalt">
+                <label for="dewalt">DEWALT</label>
+              </li>
+              <li>
+                <input type="checkbox" id="hitachi" value="hitachi">
+                <label for="hitachi">HITACHI</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul class="power-type">
+              <li>
+                <input type="radio" id="batteries" value="batteries">
+                <label for="batteries">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" id="mains-power" value="mains-power">
+                <label for="mains-power">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
           <input type="submit" value="Показать">
         </form>
       </section>
