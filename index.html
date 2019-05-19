@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -226,18 +226,19 @@
         </header>
         <ul class="services-control">
           <li>
-            <label>Доставка</label>
+            <label for="slide-one"><span>Доставка</span></label>
           </li>
           <li>
-            <label>Гарантия</label>
+            <label for="slide-two"><span>Гарантия</span></label>
           </li>
           <li>
-            <label>Кредит</label>
+            <label for=slide-three><span>Кредит</span></label>
           </li>
         </ul>
         <ul class="services-list">
           <li class="service-item">
             <!--Тут будет псевдоэлемент с изображением delivery.png width="468" height="261"-->
+            <input type="radio" class="visually-hidden" name="services-slider" id="slide-one">
             <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо<br>
@@ -248,6 +249,7 @@
           </li>
           <li class="service-item">
             <!--Тут будет псевдоэлемент с изображением warranty.png width="389" height="283"-->
+            <input type="radio" class="visually-hidden" name="services-slider" id="slide-two">
             <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,<br> 
@@ -258,6 +260,7 @@
           </li>
           <li class="service-item">
             <!--Тут будет псевдоэлемент с изображением credit.png width="465" height="285"-->
+            <input type="radio" class="visually-hidden" name="services-slider" id="slide-three">
             <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще!<br> 
