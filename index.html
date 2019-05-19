@@ -101,13 +101,13 @@
                 </li>
             </ul>
             <ul class="slider-pagination">
-              <li><input type="radio"></li>
-              <li><input class="slider-pagination-current" type="radio"></li>
+              <li><input name="slider-pg-button" type="radio"></li>
+              <li><input name="slider-pg-button" class="slider-pagination-current" type="radio"></li>
             </ul>
             <!--Тут будет псевдоэлемент с изображением icon-left.svg width="22" height="40"-->
-            <input type="button" class="previous-slide" value="&lt;">
+            <button type="button" class="previous-slide" aria-label="Предыдущий слайд">&lt;</button>
             <!--Тут будет псевдоэлемент с изображением icon-right.svg width="22" height="40"-->
-            <input type="button" class="next-slide" value="&gt;">
+            <button type="button" class="next-slide" aria-label="Следующий слайд">&gt;</button>
           </div>
         </div>
       </section>
@@ -126,7 +126,7 @@
             <span class="new-price">25500 Р.</span>
             <!--Тут будет псевдоэлемент с изображением cart-icon.svg width="15" height="15"-->
             <a href="#" class="buy-button">Купить</a>
-            <a href="#" class="bookmarks-button">В закладки</a> 
+            <button type="button" class="bookmarks-button">В закладки</button> 
             <img src="/img/Perforator_1.jpg" alt="Перфоратор BOSCH BFG 9000" width="218" height="170">           
           </li>
           <li class="goods-item">
@@ -138,7 +138,7 @@
             <span class="new-price">15500 Р.</span>
             <!--Тут будет псевдоэлемент с изображением cart-icon.svg width="15" height="15"-->
             <a href="#" class="buy-button">Купить</a>
-            <a href="#" class="bookmarks-button">В закладки</a> 
+            <button type="button" class="bookmarks-button">В закладки</button> 
             <img src="/img/Perforator_2.jpg" alt="Перфоратор BOSCH BFG 3000" width="218" height="170">           
           </li>
           <li class="goods-item">
@@ -150,7 +150,7 @@
             <span class="new-price">25500 Р.</span>
             <!--Тут будет псевдоэлемент с изображением cart-icon.svg width="15" height="15"-->
             <a href="#" class="buy-button">Купить</a>
-            <a href="#" class="bookmarks-button">В закладки</a> 
+            <button type="button" class="bookmarks-button">В закладки</button>
             <img src="/img/Perforator_3.jpg" alt="Перфоратор BOSCH BFG 6000" width="218" height="170">           
           </li>
           <li class="goods-item">
@@ -162,7 +162,7 @@
             <span class="new-price">12500 Р.</span>
             <!--Тут будет псевдоэлемент с изображением cart-icon.svg width="15" height="15"-->
             <a href="#" class="buy-button">Купить</a>
-            <a href="#" class="bookmarks-button">В закладки</a>
+            <button type="button" class="bookmarks-button">В закладки</button>
             <!--Тут будет псевдоэлемент с изображением new-flag.png width="60" height="59"-->  
             <img src="/img/Perforator_4.jpg" alt="Перфоратор BOSCH BFG 2000" width="218" height="170">           
           </li>
@@ -175,42 +175,42 @@
         </div>
         <div class="manufacturers"></ul>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-1.html">
+            <a href="catalog-manufacturer-1.html" aria-label="Bosch">
               <img src="/img/bosch.png" alt="Bosch" width="126" height="37">
             </a>
           </div>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-2.html">
+            <a href="catalog-manufacturer-2.html" aria-label="Makita">
               <img src="/img/makita.png" alt="Makita" width="123" height="40">
             </a>
           </div>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-3.html">
+            <a href="catalog-manufacturer-3.html" aria-label="DeWalt">
               <img src="/img/dewalt.png" alt="DeWalt" width="146" height="44">
             </a>
           </div>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-4.html">
+            <a href="catalog-manufacturer-4.html" aria-label="Интерскол">
               <img src="/img/interskol.png" alt="Интерскол" width="200" height="88">
             </a>
           </div>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-5.html">
+            <a href="catalog-manufacturer-5.html" aria-label="Hitachi">
               <img src="/img/hitachi.png" alt="Hitachi" width="169" height="31">
             </a>
           </div>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-6.html">
+            <a href="catalog-manufacturer-6.html" aria-label="LG">
               <img src="/img/lg.png" alt="LG" width="121" height="73">
             </a>
           </div>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-7.html">
+            <a href="catalog-manufacturer-7.html" aria-label="AEG">
               <img src="/img/aeg.png" alt="AEG" width="151" height="96">
             </a>
           </div>
           <div class="manufacturer">
-            <a href="catalog-manufacturer-8.html">
+            <a href="catalog-manufacturer-8.html" aria-label="Metabo">
               <img src="/img/metabo.png" alt="Metabo" width="204" height="69">
             </a>
           </div>
@@ -226,30 +226,29 @@
         </header>
         <ul class="services-control">
           <li>
-            <a href="delivery.html">Доставка</a>
+            <label>Доставка</label>
           </li>
           <li>
-            <a href="warranty.html">Гарантия</a>
+            <label>Гарантия</label>
           </li>
           <li>
-            <a href="credit.html">Кредит</a>
+            <label>Кредит</label>
           </li>
         </ul>
         <ul class="services-list">
           <li class="service-item">
             <!--Тут будет псевдоэлемент с изображением delivery.png width="468" height="261"-->
-            <h3><a href="delivery.html">Доставка</a></h3>
+            <h3>Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!
             </p>
-            <label>Доставка</label>
           </li>
           <li class="service-item">
             <!--Тут будет псевдоэлемент с изображением warranty.png width="389" height="283"-->
-            <h3><a href="warranty.html">Гарантия</a></h3>
+            <h3>Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,<br> 
               а также в случае пожара, спровоцированного его возгаранием,<br>  
@@ -259,7 +258,7 @@
           </li>
           <li class="service-item">
             <!--Тут будет псевдоэлемент с изображением credit.png width="465" height="285"-->
-            <h3><a href="credit.html">Кредит</a></h3>
+            <h3>Кредит</h3>
             <p>
               Залезть в долговую яму стало проще!<br> 
               Кредитные консультанты придут вам на помощь.<br>
@@ -290,7 +289,7 @@
             заехав в наш офис:
         </p>
         <p class="map">
-          <a href="map.html">
+          <a href="map.html" aria-label="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
             <img src="/img/map.png" alt="Карта" width="auto" height="auto">
           </a>
           <a href="#">Заблудились? Напишите нам!</a>
@@ -327,15 +326,15 @@
         <ul>
           <li class="social-button vkontakte">
             <!--Тут будет псевдоэлемент с изображением vk-icon.svg width="26" height="15"-->
-            <a href="#">VK</a>
+            <a href="#" aria-label="Vkontakte">VK</a>
           </li>
           <li class="social-button facebook">
             <!--Тут будет псевдоэлемент с изображением fb-icon.svg width="12" height="22"-->
-            <a href="#">FB</a>
+            <a href="#" aria-label="Facebook">FB</a>
           </li>
           <li class="social-button instagram">
             <!--Тут будет псевдоэлемент с изображением insta-icon.svg width="21" height="21"-->
-            <a href="#">INS</a>
+            <a href="#" aria-label="Instagram">INS</a>
           </li>
         </ul>
       </section>
@@ -350,12 +349,22 @@
     </footer>
     <section class="modal modal-contact-form">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p>Ваше имя</p>
-      <p>Ваш e-mail</p>
-      <p>Текст письма</p>
-      <!-- Здесь будет форма -->
-      <input type="button" class="modal-close" value="x">
-      <a href="#" class="button">Отправить</a>
+      <form class="write-us-form" action="echo.htmlacademy.ru" method="GET">
+        <label>
+          Ваше имя
+          <input type="text" name="name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш e-mail
+          <input type="email" name="email" placeholder="email@example.com">
+        </label>
+        <label>
+          Текст письма
+          <textarea name="text" placeholder="В свободной форме" rows="5"></textarea>
+        </label>
+        <button type="submit" class="button">Отправить</button>
+      </form>
+      <button type="button" class="modal-close" aria-label="Закрыть форму обратной связи">x</button>
     </section>
       
     <section class="modal modal-map">
