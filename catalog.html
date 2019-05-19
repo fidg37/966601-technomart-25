@@ -14,8 +14,8 @@
       </h1>
       <address class="address">
         <!--Тут будет псевдоэлемент с изображением icon-phone.svg width="19" height="19"-->
-        <span>+7 (812) 555-05-55</span><br>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a><br>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </address>
       <div class="header-logo">
         <a href="index.html">Техномарт</a>
@@ -77,7 +77,7 @@
           </li>
         </ul>
         <span>Цена</span>
-        <form action="" method="GET">
+        <form action="echo.htmlacademy.ru" method="GET">
           <fieldset>
             <legend>Цена</legend>
             <!-- Тут будет форма с ползунками в которой я предвосхищаю использование JavaScript'а -->
@@ -111,12 +111,16 @@
             <legend>Питание:</legend>
             <ul class="power-type">
               <li>
-                <input type="radio" id="batteries" value="batteries">
-                <label for="batteries">Аккумуляторные</label>
+                <label>
+                  <input type="radio" name="power-type" value="batteries">
+                  Аккумуляторные
+                </label>
               </li>
               <li>
-                <input type="radio" id="mains-power" value="mains-power">
-                <label for="mains-power">Сетевые</label>
+                <label>
+                  <input type="radio" name="power-type" value="mains-power">
+                  Сетевые
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -259,8 +263,8 @@
         <a href="index.html">Техномарт</a>
       </div>
       <address>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-        +7 (812) 555-05-55
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p><br>
+        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </address>
       <ul class="footer-navigation">
         <li><a href="about-us.html">Кампания</a></li>
