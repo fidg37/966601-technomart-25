@@ -36,7 +36,7 @@
         <li>
           <p>
             <!--Тут будет псевдоэлемент с изображением icon-user.svg width="20" height="18"-->
-            <a href="#">Равшан Джамшутович</a>
+            <a href="#" aria-label="Выход из профиля">Равшан Джамшутович</a>
             <a href="#" class="exit-button"><img src="/img/icon-logout.svg" alt="Выход" width="20" height="17"></a>
           </p>
         </li>
@@ -57,7 +57,7 @@
     </header>
     <main class="container">
       <ul class="breadcrumbs">
-          <li><a href="index.html"><!--Тут будет псевдоэлемент с изображением icon-home.svg width="14" height="12"--></a></li>
+          <li><a href="index.html" aria-label="Главная страница"><!--Тут будет псевдоэлемент с изображением icon-home.svg width="14" height="12"--></a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li class="breadcrumbs-current"><a>Перфораторы</a></li>
@@ -70,10 +70,10 @@
           <li class="sorting-button"><a href="#">По типу</a></li>
           <li class="sorting-button"><a href="#">По функционалу</a></li>
           <li class="sorting-button-up">
-              <a href="#"><!--Тут будет псевдоэлемент с изображением icon-up-dir.svg width="11" height="10"--></a>
+              <a href="#" aria-label="Сортировка сверху"><!--Тут будет псевдоэлемент с изображением icon-up-dir.svg width="11" height="10"--></a>
           </li>
           <li class="sorting-button-down">
-              <a href="#"><!--Тут будет псевдоэлемент с изображением icon-down-dir.svg width="11" height="10"--></a>
+              <a href="#" aria-label="Сортировка снизу"><!--Тут будет псевдоэлемент с изображением icon-down-dir.svg width="11" height="10"--></a>
           </li>
         </ul>
         <span>Цена</span>
@@ -246,7 +246,7 @@
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
       </ul>
-      <input type="button" class="pagination-control" value="Следующая">
+      <a href="#" class="pagination-control">Следующая</a>
       <div class="information">
         <h2>Пара слов о перфораторах</h2>
         <p>
@@ -288,15 +288,15 @@
         <ul>
           <li class="social-button vkontakte">
             <!--Тут будет псевдоэлемент с изображением vk-icon.svg width="26" height="15"-->
-            <a href="#">VK</a>
+            <a href="#" aria-label="Vkontakte">VK</a>
           </li>
           <li class="social-button facebook">
             <!--Тут будет псевдоэлемент с изображением fb-icon.svg width="12" height="22"-->
-            <a href="#">FB</a>
+            <a href="#" aria-label="Facebook">FB</a>
           </li>
           <li class="social-button instagram">
             <!--Тут будет псевдоэлемент с изображением insta-icon.svg width="21" height="21"-->
-            <a href="#">INS</a>
+            <a href="#" aria-label="Instagram">INS</a>
           </li>
         </ul>
       </section>
@@ -309,17 +309,13 @@
         <a href="htmlacademy.ru">htmlacademy.ru</a>
       </p>
     </footer>
-      
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <input class="modal-close" value="x">
-    </section>
 
     <section class="modal modal-cart">
+        <!--Тут будет псевдоэлемент с изображением check.svg width="66" height="66"-->
         <p>Товар добавлен в корзину!</p>
         <a href="#">Оформить заказ</a>
-        <a href="#">Продолжить покупки</a>
-        <input class="modal-close" value="x">
+        <button type="button">Продолжить покупки</button>
+        <button type="button" class="modal-close" aria-label="Закрыть уведомление корзины">x</button>
     </section>
   </body>
 </html>
