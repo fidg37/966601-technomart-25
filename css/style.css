@@ -99,7 +99,7 @@ a {
 }
 
 .search-form {
-  width: 287px;
+  width: 270px;
   height: 42px;
 }
 
@@ -149,6 +149,79 @@ a {
 
 .search-form input:focus + svg path {
     fill: #ee3643;
+}
+
+.header-top-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top-menu li {
+  width: 150px;
+  height: 42px;
+}
+
+.header-top-menu a{
+  display: block;
+  padding-left: 44px;
+
+  line-height: 42px;
+
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.header-top-menu svg {
+  position: relative;
+  bottom: 29px;
+  left: 17px;
+}
+
+.header-top-menu path {
+  fill: #6a7180;
+}
+
+.header-top-menu a:hover,
+.header-top-menu a:focus {
+  background-color: #212a3a;
+}
+
+.header-top-menu a:hover + svg path,
+.header-top-menu a:hover + svg circle,
+.header-top-menu a:hover + svg polygon,
+.header-top-menu a:focus + svg path,
+.header-top-menu a:focus + svg circle,
+.header-top-menu a:focus + svg polygon {
+  fill: #ffffff;
+}
+
+.header-top-menu a:active {
+  background-color: #161d29;
+  color: #a2a5a9;
+}
+
+.header-top-menu a:active + svg path,
+.header-top-menu a:active + svg circle,
+.header-top-menu a:active + svg polygon {
+  fill: #8b8e94;
+}
+
+.order-button a {
+  width: 150px;
+  padding: 0;
+
+  background-color: #63a63e;
+  text-align: center;
+}
+
+.order-button a:hover,
+.order-button a:focus {
+  background-color: #5fbb2d;
+}
+
+.order-button a:active {
+  background-color: #518534;
 }
 
 .visually-hidden {
