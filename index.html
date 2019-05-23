@@ -86,18 +86,18 @@
       <section class="promo-block">
         <h2 class="visually-hidden">Наши услуги</h2>
         <div class="promo-top">
-          <div class="promo-item">
+          <div class="promo-item materials">
             <!--Тут будет псевдоэлемент с изображением icon-1.svg width="44" height="65"-->
             <h3>Материалы</h3>
             <!--Тут будет псевдоэлемент с изображением new-flag.png width="60" height="59"-->
             <a href="catalog.html">На любой вкус</a>
           </div>
-          <div class="promo-item">
+          <div class="promo-item tools">
             <!--Тут будет псевдоэлемент с изображением icon-2.svg width="75" height="61"-->
             <h3>Инструмент</h3>
             <a href="catalog.html">На все случаи</a>
           </div>
-          <div class="promo-item">
+          <div class="promo-item tech">
             <!--Тут будет псевдоэлемент с изображением icon-3.svg width="78" height="62"-->
             <h3>Техника</h3>
             <a href="catalog.html">Для стройки</a>
@@ -105,12 +105,12 @@
         </div>
         <div class="promo-bottom">
           <div class="promo-rigth-side">
-            <div class="promo-item">
+            <div class="promo-item discounts">
               <!--Тут будет псевдоэлемент с изображением icon-4.svg width="59" height="72"-->
               <h3>Скидки 50%</h3>
               <a href="discounts.html">На 350 товаров</a>
             </div>
-            <div class="promo-item">
+            <div class="promo-item delivery">
               <!--Тут будет псевдоэлемент с изображением icon-5.svg width="78" height="63"-->
               <h3>Доставка</h3>
               <a href="delivery.html">Бесплатно</a>
@@ -124,21 +124,32 @@
                 <p>Соседям на радость</p>
                 <a href="catalog.html">Открыть каталог</a>
               </li>
-              <li class="slide">
+              <li class="slide slide-first">
                   <!--Тут будет background-image slide-1.jpg width="620" height="266"--> 
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
                   <a href="catalog.html">Открыть каталог</a>
                 </li>
             </ul>
-            <ul class="slider-pagination">
-              <li><input name="slider-pg-button" type="radio"></li>
-              <li><input name="slider-pg-button" class="slider-pagination-current" type="radio"></li>
-            </ul>
+            <div class="slider-pagination">
+              <button type="button" class="pg-button pg-first" aria-label="Первый слайд"></button>
+              <button type="button" class="pg-button pg-second" aria-label="Второй слайд"></button>
+            </div>
             <!--Тут будет псевдоэлемент с изображением icon-left.svg width="22" height="40"-->
-            <button type="button" class="previous-slide" aria-label="Предыдущий слайд">&lt;</button>
+            <button type="button" class="slider-button previous-slide" aria-label="Предыдущий слайд">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
+                <polygon fill="#FFFFFF" points="19.83,-0.035 21.919,2.064 4.13,19.947 21.977,37.886 19.887,39.985 -0.048,19.947 "/>
+              </svg>
+            </button>
             <!--Тут будет псевдоэлемент с изображением icon-right.svg width="22" height="40"-->
-            <button type="button" class="next-slide" aria-label="Следующий слайд">&gt;</button>
+            <button type="button" class="slider-button next-slide" aria-label="Следующий слайд">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="40px" viewBox="0 0 22 40" enable-background="new 0 0 22 40" xml:space="preserve">
+                <g id="Layer_1"></g>
+                <g id="Layer_2">
+                  <polygon fill="#FFFFFF" points="2.098,-0.035 0.009,2.064 17.798,19.947 -0.048,37.886 2.041,39.985 21.976,19.947 	"/>
+                </g>
+              </svg>
+            </button>
           </div>
         </div>
       </section>

@@ -1,3 +1,5 @@
+/*Общие стили*/
+
 body {
   margin: 0;
   padding: 0;
@@ -18,6 +20,8 @@ a {
   font-size: 17px;
   line-height: 18px;
 }
+
+/*Стили для хедера*/
 
 .header-logo {
   display: block;
@@ -320,6 +324,272 @@ a {
 .navigation-list a:active {
   background-color: #1d2739;
   box-shadow: inset 0 -5px 0 0 #1d2739;
+}
+
+/*Стили для основного содержания*/
+
+/*Услуги промо блока*/
+
+.promo-item {
+  position: relative;
+  width: 300px;
+  height: 123px;
+  padding-bottom: 23px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: black;
+}
+
+.promo-item h3 {
+  display: inline-block;
+  margin-left: 23px;
+  margin-top: 23px;
+  vertical-align: top;
+
+  font-size: 24px;
+  line-height: 30px; 
+
+  color: #ffffff;
+}
+
+.promo-item a {
+  display: block;
+  width: 135px;
+  height: 38px;
+  margin-left: 25px;
+
+  line-height: 38px;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #ffffff;
+
+  border-radius: 5px;
+}
+
+.promo-item a:hover,
+.promo-item a:focus {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.promo-item a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.materials {
+  background-color: #ffbf47;
+}
+
+.materials::after {
+  content: '';
+  
+  position: absolute;
+  width: 44px;
+  height: 65px;
+  right: 43px;
+  bottom: 29px;
+  
+  background-image: url(/img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.tools {
+  background-color: #3bbce3;
+}
+
+.tools::after {
+  content: '';
+  
+  position: absolute;
+  width: 75px;
+  height: 61px;
+  right: 28px;
+  bottom: 29px;
+  
+  background-image: url(/img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.tech {
+  background-color: #dc91d8;
+}
+
+.tech::after {
+  content: '';
+  
+  position: absolute;
+  width: 78px;
+  height: 62px;
+  right: 31px;
+  bottom: 30px;
+  
+  background-image: url(/img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.discounts {
+  background-color: #8ed78f;
+}
+
+.discounts::after {
+  content: '';
+  
+  position: absolute;
+  width: 59px;
+  height: 72px;
+  right: 45px;
+  bottom: 25px;
+  
+  background-image: url(/img/icon-4.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.delivery {
+  background-color: #ffc047;
+}
+
+.delivery::after {
+  content: '';
+  
+  position: absolute;
+  width: 78px;
+  height: 63px;
+  right: 31px;
+  bottom: 28px;
+  
+  background-image: url(/img/icon-5.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/*Слайдер*/
+
+.slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-slider {
+  position: relative;
+  width: 620px;
+  height: 266px;
+
+  background-color: black;
+  color: white;
+  z-index: -2;
+}
+
+.slide-current::before {
+  content: '';
+  
+  position: absolute;
+  
+  width: 620px;
+  height: 266px;
+  z-index: -1;
+
+  background-image: url(/img/slide-2.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.slide-first {
+  display: none;
+}
+
+.slide h3,
+.slide p,
+.slide a {
+  position: absolute;
+}
+
+.slide a{
+  width: 195px;
+  height: 38px;
+  left: 25px;
+  bottom: 22px;
+
+  line-height: 38px;
+  text-align: center;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  background-color: #ee3643;
+  color: white;
+}
+
+.slide h3 {
+  left: 24px;
+  top: -5px;
+
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase; 
+}
+
+.slide p {
+  left: 25px;
+  top: 50px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.slider-button {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 112px;
+
+  border: none;
+  
+  background-color: transparent;
+}
+
+.previous-slide {
+  left: 25px;
+}
+
+.next-slide {
+  right: 25px;
+}
+
+.slider-button svg {
+
+}
+
+/*Пагинация слайдера*/
+
+.slider-pagination {
+  position: absolute;
+  left: 295px;
+  bottom: 36px;
+  padding: 0px;
+  margin: 0px;
+  width: 30px;
+  height: 10px;
+}
+.pg-button {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  margin: 0;
+
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.pg-second {
+  background-color: #ee3643;
 }
 
 .visually-hidden {
