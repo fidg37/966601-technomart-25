@@ -65,30 +65,78 @@ a {
 }
 
 .our-address a{
-  display: block;
+  display: table-cell;
   width: 264px;
   height: 39px;
   border: 3px solid #ffffff;
+
+  vertical-align: middle;
 
   color: #ee3643;
   background-color: #f3f7f8;
 }
 
-.header-top-part input {
-  color: #000000;
-  background-color: #293449;
-  border: none; 
+.search-form {
+  width: 287px;
+  height: 42px;
 }
 
-.header-top-part input::placeholder {
+.search-form input {
+  width: 100%;
+  height: 100%;
+  
+  vertical-align: middle;
+
+  background-color: #293449;
+  color: #000000;
+}
+
+.search-form svg {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  z-index: 5;
+  bottom: 29px;
+  left: 17px;
+}
+
+.search-form path {
+  fill: #6a7180;
+}
+
+.search-form input {
+  background-color: #293449;
+  border: none; 
+  text-indent: 49px;
+}
+
+.search-form input::placeholder {
   color: #ffffff;
 }
 
-.header-top-part input:hover::placeholder {
-  color: #000000;
+.search-form input:hover {
+  background-color: #212a3a;
+}
+
+.search-form input:hover + svg path {
+    fill: #ffffff;
+}
+
+.search-form input:focus {
   background-color: #ffffff;
 }
 
-.header-top-part input:focus {
-  background-color: #ffffff;
+.search-form input:focus + svg path {
+    fill: #ee3643;
+}
+
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
 }
