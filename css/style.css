@@ -58,10 +58,23 @@ a {
 }
 
 .our-address {
+  width: 270px;
   font-size: 21px;
   line-height: 21px;
   color: #32425c;
   font-style: normal;
+}
+
+.our-address a + p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.our-address::before {
+  content: url(/img/icon-phone.svg);
+  position: relative;
+  top: 36px;
+  left: 15px;
 }
 
 .our-address a{
@@ -74,6 +87,15 @@ a {
 
   color: #ee3643;
   background-color: #f3f7f8;
+}
+
+.our-address span {
+  margin-left: 71px;
+}
+
+.our-address p {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .search-form {
@@ -95,7 +117,6 @@ a {
   position: relative;
   width: 17px;
   height: 17px;
-  z-index: 5;
   bottom: 29px;
   left: 17px;
 }
