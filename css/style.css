@@ -832,6 +832,24 @@ a {
   background-position: 50% 50%;
 }
 
+.manufacturer {
+  position: relative;
+  width: 218px;
+  height: 143px;
+  margin: 10px;
+
+  border: 1px solid #eaeaea;
+}
+
+.manufacturer img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
