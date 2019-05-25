@@ -297,53 +297,59 @@
         <header class="services-header">
           <h3>Сервисы</h3>
           <p>
-              Хороший интернет-магазин отличается от плохого не только ценами!<br>
+              Хороший интернет-магазин отличается от плохого не только ценами!
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </header>
         <ul class="services-control">
           <li>
-            <label for="slide-one"><span>Доставка</span></label>
+            <label for="slide-one" tabindex="0"><span>Доставка</span></label>
           </li>
           <li>
-            <label for="slide-two"><span>Гарантия</span></label>
+            <label for="slide-two" tabindex="0"><span>Гарантия</span></label>
           </li>
           <li>
-            <label for=slide-three><span>Кредит</span></label>
+            <label for=slide-three tabindex="0"><span>Кредит</span></label>
           </li>
         </ul>
         <ul class="services-list">
-          <li class="service-item">
-            <!--Тут будет псевдоэлемент с изображением delivery.png width="468" height="261"-->
-            <input type="radio" class="visually-hidden" name="services-slider" id="slide-one">
-            <h3>Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!
-            </p>
+          <li class="">
+            <input type="radio" class="slider-radio visually-hidden" name="services-slider" id="slide-one" checked>
+            <div class="service-item service-delivery">
+              <!--Тут будет псевдоэлемент с изображением delivery.png width="468" height="261"-->             
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!
+              </p>
+            </div>
           </li>
-          <li class="service-item">
-            <!--Тут будет псевдоэлемент с изображением warranty.png width="389" height="283"-->
-            <input type="radio" class="visually-hidden" name="services-slider" id="slide-two">
-            <h3>Гарантия</h3>
-            <p>
-              Если купленный у нас товар поломается или заискрит,<br> 
-              а также в случае пожара, спровоцированного его возгаранием,<br>  
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> 
-              Дом уж восстановите как-нибудь сами.
-            </p>
+          <li class="">
+            <input type="radio" class="slider-radio visually-hidden" name="services-slider" id="slide-two">
+            <div class="service-item service-warranty">
+              <!--Тут будет псевдоэлемент с изображением warranty.png width="389" height="283"-->             
+              <h3>Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит,<br> 
+                а также в случае пожара, спровоцированного его возгаранием,<br>  
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> 
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </div>
           </li>
-          <li class="service-item">
-            <!--Тут будет псевдоэлемент с изображением credit.png width="465" height="285"-->
-            <input type="radio" class="visually-hidden" name="services-slider" id="slide-three">
-            <h3>Кредит</h3>
-            <p>
-              Залезть в долговую яму стало проще!<br> 
-              Кредитные консультанты придут вам на помощь.<br>
-            </p>
-            <a href="credit.html">Отправить заявку</a>
+          <li class="">
+            <input type="radio" class="slider-radio visually-hidden" name="services-slider" id="slide-three">
+            <div class="service-item service-credit">
+              <!--Тут будет псевдоэлемент с изображением credit.png width="465" height="285"-->             
+              <h3>Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще!<br> 
+                Кредитные консультанты придут вам на помощь.<br>
+              </p>
+              <a href="credit.html">Отправить заявку</a>
+            </div>
           </li>
         </ul>
       </section>

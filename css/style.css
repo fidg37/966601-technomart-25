@@ -850,6 +850,220 @@ a {
   right: 0;
 }
 
+.services {
+  position: relative;
+  width: 970px;
+  height: 522px;
+  padding: 65px 130px 0 130px;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  word-wrap: break-word;
+
+  background-color: #f5f8fa;
+}
+
+.services ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.services header {
+  width: 420px;
+  margin-bottom: 75px;  
+}
+
+.services h3 {
+  margin-top: 0;
+}
+
+.services p {
+  margin-bottom: 0;
+}
+
+.services header h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase
+}
+
+.services-control {
+  position: absolute;
+  bottom: 98px;
+  left: 130px;
+}
+
+.services-control li {
+  width: 240px;
+  height: 62px;  
+}
+
+.services-control label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-left: 22px;
+
+  font-size: 21px;
+  line-height: 62px;
+  text-align: left;
+  
+  box-shadow:
+    inset 0 1px 0 0 #405069,
+    inset 0 -1px 0 0 #293449 
+  ;
+
+  background-color: #32425c;
+  color: white;
+}
+
+.services-control label:hover,
+.services-control label:focus {
+  background-color: #293449;
+}
+
+.service-item {
+  display: none;
+  width: 420px;
+  margin-top: 60px;
+  margin-left: 320px;
+}
+
+.service-credit p {
+  margin-bottom: 25px; 
+}
+
+.service-credit a {
+  display: block;
+  width: 195px;
+  height: 38px;
+  
+  font-size: 14px;
+  line-height: 38px;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  
+  color: white;
+  background-color: #ff5357;
+  border-radius: 5px;
+}
+
+.service-credit a:hover,
+.service-credit a:focus {
+  background-color: #ca2c37;
+}
+
+.service-credit a:active {
+  background-color: #ba2732;
+}
+
+.service-item h3 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  text-transform: uppercase;
+  
+  color: #32425c;
+}
+
+.service-delivery::before {
+  content: 'Доставка';
+  position: absolute;
+  display: block;
+  width: 240px;
+  height: 62px;
+  padding-left: 22px;
+  bottom: 222px;
+  left: 130px;
+
+  font-size: 21px;
+  line-height: 62px;
+  text-align: left;
+  
+  background-color: white;
+  color: #32425c;
+}
+
+.service-warranty::before {
+  content: 'Гарантия';
+  position: absolute;
+  display: block;
+  width: 240px;
+  height: 62px;
+  padding-left: 22px;
+  bottom: 160px;
+  left: 130px;
+
+  font-size: 21px;
+  line-height: 62px;
+  text-align: left;
+  
+  background-color: white;
+  color: #32425c;
+}
+
+.service-credit::before {
+  content: 'Кредит';
+  position: absolute;
+  display: block;
+  width: 240px;
+  height: 62px;
+  padding-left: 22px;
+  bottom: 98px;
+  left: 130px;
+
+  font-size: 21px;
+  line-height: 62px;
+  text-align: left;
+  
+  background-color: white;
+  color: #32425c;
+}
+
+.service-delivery::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  width: 468px;
+  height: 261px;
+  background-image: url(/img/delivery.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.service-warranty::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  width: 468px;
+  height: 261px;
+  background-image: url(/img/warranty.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.service-credit::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 130px;
+  width: 465px;
+  height: 285px;
+  background-image: url(/img/credit.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.slider-radio:checked + div {
+  display: block;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
