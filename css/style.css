@@ -992,15 +992,19 @@ fieldset {
   background-color: #f5f8fa;
 }
 
+.services {
+  font-family: "PT-Sans Narrow", Arial, sans-serif;
+}
+
 .services-block {
   position: relative;
   width: 940px;
   height: 522px;
   padding: 65px 130px 0 130px;
 
-  font-size: 14px;
+  font-size: 13px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   word-wrap: break-word;
 }
 
@@ -1028,7 +1032,8 @@ fieldset {
 .services header h3 {
   font-size: 30px;
   line-height: 30px;
-  text-transform: uppercase
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .services-control {
@@ -1069,7 +1074,7 @@ fieldset {
 .service-item {
   display: none;
   width: 420px;
-  margin-top: 60px;
+  margin-top: 35px;
   margin-left: 320px;
 }
 
@@ -1091,6 +1096,7 @@ fieldset {
   margin-bottom: 30px;
   font-size: 36px;
   text-transform: uppercase;
+  font-weight: 400;
   
   color: #32425c;
 }
@@ -1200,8 +1206,13 @@ fieldset {
   height: 536px;
   padding: 82px 130px 0 130px;
 
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.about-us p {
+  font-family: "PT-Sans Narrow", Arial, sans-serif;
+  line-height: 24px;
 }
 
 .about-us-left {
@@ -1631,6 +1642,23 @@ fieldset {
   color: white;
   background-color: #ee3643;
   border-color: #ee3643;
+}
+
+.information {
+  background-color: #f2f6f8;
+}
+
+.information h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.information p {
+  font-size: 13px;
+  line-height: 24px;
 }
 
 .visually-hidden {
