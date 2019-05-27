@@ -11,7 +11,8 @@ a {
  text-decoration: none;
 }
 
-.main-header {
+.main-header,
+.inner-header {
   background-color: #f3f7f8;
 }
 
@@ -70,6 +71,10 @@ a {
 .logo:active {
   background-color: #ba2732;
   box-shadow: inset 0 -5px 0 0 #8e1e26;
+}
+
+fieldset {
+  border: none;
 }
 
 /*Стили для хедера*/
@@ -354,6 +359,97 @@ a {
   box-shadow: inset 0 -5px 0 0 #1d2739;
 }
 
+/*Стили для хедера каталога*/
+
+.user-navigation-active {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.user-navigation-active a {
+  color: black;
+}
+
+.user {
+  position: relative;
+  width: 299px;
+  height: 45px;
+}
+
+.profile {
+  position: relative;
+  display: block;
+  width: 254px;
+  height: 45px;
+  padding-left: 45px;
+  
+  font-size: 21px; 
+  line-height: 45px;
+
+  background-color: white;
+}
+
+.profile svg {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
+.logout {
+  position: absolute;
+  top: 14px;
+  right: 10px;
+
+  width: 20px;
+  height: 17px;
+
+  background-color: transparent;
+}
+
+.logout svg {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.profile:hover svg path,
+.profile:focus svg path {
+  fill: #32425c;
+}
+
+.logout:hover svg path,
+.logout:hover svg polygon,
+.logout:focus svg path,
+.logout:focus svg polygon {
+  fill: #32425c;
+}
+
+.my-orders,
+.settings {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.my-orders:hover,
+.settings:hover,
+.my-orders:focus,
+.settings:focus {
+ color: #ee3643;
+}
+
+.my-orders:active,
+.settings:active {
+  color: #b2b2b2;
+}
+
+/*Конец стилей хедера каталога*/
+
 /*Стили для основного содержания*/
 
 /*Услуги промо блока*/
@@ -496,6 +592,8 @@ a {
   background-position: 50% 50%;
 }
 
+/*Конец услуг*/
+
 /*Слайдер*/
 
 .promo-slider {
@@ -608,6 +706,8 @@ a {
 
 /*Конец стилей слайдера*/
 
+/*Стили заголовков товаров и производителей*/
+
 .content-header {
   position: relative;
   width: 940px;
@@ -642,6 +742,10 @@ a {
   text-transform: uppercase;
   line-height: 38px;
 }
+
+/*Конец стилей для заголовков товаров и производителей*/
+
+/*Стили списка товаров*/
 
 .goods-list {
   display: flex;
@@ -829,6 +933,10 @@ a {
   background-position: 50% 50%;
 }
 
+/*Конец стилей списка товаров*/
+
+/*Стили для списка производителей*/
+
 .manufacturers {
   display: flex;
   justify-content: space-between;
@@ -871,6 +979,10 @@ a {
 .manufacturers a:active img {
   z-index: -1;
 }
+
+/*Конец стилей для списка производителей*/
+
+/*Стили для блока сервисов*/
 
 .services {
   display: flex;
@@ -1077,6 +1189,10 @@ a {
   display: block;
 }
 
+/*Конец стилей для блока сервисов*/
+
+/*Стили для блока о компании*/
+
 .about-us {
   display: flex;
   justify-content: space-between;
@@ -1163,6 +1279,10 @@ a {
   bottom: 0;
   left: 0;
 }
+
+/*Конец стилей для блока о компании*/
+
+/*Стили для футера*/
 
 .footer-top {
   background-color: #32425c;
@@ -1263,6 +1383,10 @@ a {
 .social-button:active {
   background-color: #ee3643;
 }
+
+/*Конец стилей для футера*/
+
+/*Стили для всплывающих окон*/
 
 .modal-contact-form {
   position: relative;
@@ -1372,6 +1496,97 @@ a {
   height: 446px;
   
   box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.5);
+}
+
+/*Конец стилей для всплывающих окон*/
+
+.container-catalog {
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+}
+
+.breadcrumbs {
+  list-style: none;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {
+  color: black;
+}
+
+.catalog-header {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.filters span,
+.sorting {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting {
+  list-style: none;
+}
+
+.sorting-button a {
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #ee3643;
+}
+
+.sorting-button a:hover,
+.sorting-button a:focus {
+  color: black;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-button-current a,
+.sorting-button a:active {
+  color: #ee3643;
+  border: none;
+}
+
+.price-form legend,
+.manufacturers-form legend,
+.power-form legend {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  color: black;
+}
+
+.manufacturers-form-list,
+.power-type {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.show-button {
+  width: 138px;
+  height: 36px;
+
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  border-radius: 5px;
+
+  border: 1px solid #e5e5e5;
+  background-color: white;
 }
 
 .visually-hidden {
