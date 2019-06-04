@@ -1886,9 +1886,13 @@ fieldset {
 .catalog-content-layout {
   display: flex;
   justify-content: space-between;
+
+  margin-bottom: 60px;
 }
 
 /*Конец стилей для товаров каталога*/
+
+/*Стили для фильтров*/
 
 .filters {
   width: 220px;
@@ -2005,10 +2009,23 @@ fieldset {
   background-color: white;
 }
 
+/*Конец стилей для фильтров*/
+
+/*Стили пагинации*/
+
+.pagination-layout {
+  display: flex;
+}
+
 .pagination-list {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.pagination-list li {
+  margin-right: 5px;
 }
 
 .pagination-item a,
@@ -2048,11 +2065,28 @@ fieldset {
   border-color: #ee3643;
 }
 
-.information {
+/*Конец стилей пагинации*/
+
+/*Стили для блока информации в каталоге*/
+
+.information-wrapper {
+  width: 100%;
+  min-height: 261px;
+  margin-bottom: -13px;
+
   background-color: #f2f6f8;
 }
 
+.information {
+  padding-top: 68px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
 .information h2 {
+  margin-top: 0;
+  margin-bottom: 35px;
+
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -2063,6 +2097,10 @@ fieldset {
 .information p {
   font-size: 13px;
   line-height: 24px;
+}
+
+.footer-catalog {
+  margin-top: 0;
 }
 
 .visually-hidden {
