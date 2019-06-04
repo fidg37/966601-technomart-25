@@ -1890,11 +1890,89 @@ fieldset {
 
 /*Конец стилей для товаров каталога*/
 
-.price-form legend,
-.manufacturers-form legend,
-.power-form legend {
+.filters {
+  width: 220px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.filters fieldset {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.price-form {
+  min-height: 187px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filters li {
+  margin-bottom: 19px;
+}
+
+.filters label {
+  position: relative;
+  
+  padding-left: 35px;
+
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.manufacturers-form-list label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 23px;
+  height: 23px;
+  
+  background-image: url(/img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.manufacturers-form-list input:checked ~ ::after {
+  width: 27px;
+
+  background-image: url(/img/checkbox-on.svg);
+}
+
+.manufacturers-form {
+  min-height: 237x;
+
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.power-type label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -3px;
+  
+  width: 25px;
+  height: 25px;
+  
+  background-image: url(/img/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.power-type input:checked ~ ::after {
+  background-image: url(/img/radio-on.svg);
+}
+
+.filters .power-form {
+  margin-bottom: 78px;
+}
+
+.filters legend {
+  margin-bottom: 22px;
+
   font-size: 17px;
-  line-height: 30px;
+  line-height: 17px;
   text-transform: uppercase;
   font-weight: 700;
 
@@ -1914,9 +1992,11 @@ fieldset {
 
 .show-button {
   width: 138px;
+  min-height: 38px;
 
+  font-family: inherit;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 38px;
   text-transform: uppercase;
   
   border-radius: 5px;
