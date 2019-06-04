@@ -1193,7 +1193,7 @@ fieldset {
   content: '';
   position: absolute;
   bottom: 0;
-  right: -10px;
+  right: -20px;
   width: 468px;
   height: 261px;
   background-image: url(/img/warranty.png);
@@ -1679,13 +1679,18 @@ fieldset {
 /*Конец стилей для всплывающих окон*/
 
 .container-catalog {
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
-.breadcrumbs {
-  list-style: none;
+/*Стили для хлебных крошек*/
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1694,6 +1699,37 @@ fieldset {
 .breadcrumbs a {
   color: black;
 }
+
+.breadcrumbs li::before {
+  content: '';
+  display: inline-block;
+
+  width: 8px;
+  height: 12px;
+  margin: 0 16px;
+
+  background-image: url(/img/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.breadcrumbs li:first-child::before {
+  display: none;
+}
+
+.breadcrumbs li:first-child a::before {
+  content: '';
+  display: block;
+  
+  width: 14px;
+  height: 12px;
+
+  background-image: url(/img/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+/*Конец стилей для хлебных крошек*/
 
 .catalog-header {
   font-size: 30px;
