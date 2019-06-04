@@ -97,19 +97,21 @@
       </ul>
       <h2 class="catalog-header">Перфораторы</h2>
       <section class="filters">
-        <span>Фильтр:</span>
-        <span>Сортировка:</span>
-        <ul class="sorting">
-          <li class="sorting-button sorting-button-current"><a href="#">По цене</a></li>
-          <li class="sorting-button"><a href="#">По типу</a></li>
-          <li class="sorting-button"><a href="#">По функционалу</a></li>
-          <li class="sorting-button-up">
-              <a href="#" aria-label="Сортировка сверху"><!--Тут будет псевдоэлемент с изображением icon-up-dir.svg width="11" height="10"--></a>
-          </li>
-          <li class="sorting-button-down">
-              <a href="#" aria-label="Сортировка снизу"><!--Тут будет псевдоэлемент с изображением icon-down-dir.svg width="11" height="10"--></a>
-          </li>
-        </ul>
+        <div class="layout">
+          <span>Фильтр:</span>       
+          <ul class="sorting">
+            <li><span>Сортировка:</span></li>
+            <li class="sorting-button sorting-button-current sorting-price"><a href="#">По цене</a></li>
+            <li class="sorting-button sorting-type"><a href="#">По типу</a></li>
+            <li class="sorting-button sorting-functional"><a href="#">По функционалу</a></li>
+            <li class="sorting-arrow sorting-arrow-up">
+                <a href="#" aria-label="Сортировка сверху"><!--Тут будет псевдоэлемент с изображением icon-up-dir.svg width="11" height="10"--></a>
+            </li>
+            <li class="sorting-arrow sorting-arrow-down">
+                <a href="#" aria-label="Сортировка снизу"><!--Тут будет псевдоэлемент с изображением icon-down-dir.svg width="11" height="10"--></a>
+            </li>
+          </ul>
+        </div>
         <form action="echo.htmlacademy.ru" method="GET">
           <fieldset class="price-form">
             <legend>Цена</legend>

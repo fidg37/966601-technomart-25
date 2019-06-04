@@ -90,7 +90,7 @@ fieldset {
 }
 
 .header-top-wrapper {
-  width: 100vw;
+  width: 100%;
   min-height: 42px;
   margin-bottom: 46px;
 
@@ -1739,6 +1739,7 @@ fieldset {
   padding-bottom: 34px;
   padding-left: 28px;
   margin: 0;
+  margin-bottom: 20px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -1749,6 +1750,10 @@ fieldset {
   color: #32425c;
   background-color: #f2f6f8;
 }
+
+/*Конец стилей заголовка каталога*/
+
+/*Стили фильтров*/
 
 .filters span,
 .sorting {
@@ -1775,6 +1780,94 @@ fieldset {
 .sorting-button a:active {
   color: #ee3643;
   border: none;
+}
+
+.filters .layout {
+  display: flex;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.sorting {
+  display: flex;
+  list-style: none;
+
+  width: 700px;
+  margin: 0;
+  padding-left: 19px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+  margin-left: 20px;
+
+  background-color: #f7f3ec;
+
+  border-radius: 5px;
+}
+
+.sorting li:first-child {
+  margin-right: 140px;
+}
+
+.sorting-price {
+  margin-right: 42px;
+}
+
+.sorting-type {
+  margin-right: 66px;
+}
+
+.sorting-functional {
+  margin-right: 46px;
+}
+
+.sorting-arrow {
+  position: relative;
+  width: 11px;
+  height: 10px;
+  margin: auto 0;
+}
+
+.sorting-arrow a {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 0;
+
+  border-right: 5.5px solid transparent;
+  border-left: 5.5px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #c5c5c5;
+}
+
+.sorting-arrow-up {
+  margin-right: 21px;
+}
+
+.sorting-arrow-down a {
+  top: 0;
+  transform: rotate(180deg);
+}
+
+.sorting-arrow a:hover,
+.sorting-arrow a:focus {
+  border-bottom-color: black;
+}
+
+.sorting-arrow a:active {
+  border-bottom-color: #ee3643;
+}
+
+.filters .layout > span {
+  width: 201px;
+  padding-left: 19px;
+  padding-top: 11px;
+  padding-bottom: 13px;
+
+  background-color: #f7f3ec;
+
+  border-radius: 5px;
 }
 
 .price-form legend,
