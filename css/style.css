@@ -860,7 +860,7 @@ fieldset {
   margin-right: 20px;
 }
 
-.goods-item:nth-child(4n + 4) {
+.goods-item-main:nth-child(4n + 4) {
   margin-right: 0px;
 }
 
@@ -1753,9 +1753,9 @@ fieldset {
 
 /*Конец стилей заголовка каталога*/
 
-/*Стили фильтров*/
+/*Стили для сортировки*/
 
-.filters span,
+.sorting-layout span,
 .sorting {
   font-size: 13px;
   line-height: 18px;
@@ -1782,8 +1782,10 @@ fieldset {
   border: none;
 }
 
-.filters .layout {
+.sorting-layout {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
@@ -1793,12 +1795,11 @@ fieldset {
   display: flex;
   list-style: none;
 
-  width: 700px;
+  width: 681px;
   margin: 0;
   padding-left: 19px;
   padding-top: 11px;
   padding-bottom: 13px;
-  margin-left: 20px;
 
   background-color: #f7f3ec;
 
@@ -1859,7 +1860,7 @@ fieldset {
   border-bottom-color: #ee3643;
 }
 
-.filters .layout > span {
+.sorting-layout > span {
   width: 201px;
   padding-left: 19px;
   padding-top: 11px;
@@ -1869,6 +1870,25 @@ fieldset {
 
   border-radius: 5px;
 }
+
+/*Конец стилей для сортировки*/
+
+/*Стили для товаров каталога*/
+
+.catalog-goods-list {
+  width: 700px;
+}
+
+.goods-item-catalog:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
+.catalog-content-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Конец стилей для товаров каталога*/
 
 .price-form legend,
 .manufacturers-form legend,
