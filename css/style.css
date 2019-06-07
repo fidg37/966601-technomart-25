@@ -19,14 +19,18 @@ a {
 
 
 .button-red {
+  box-sizing: border-box;
   display: block;
+  padding-top: 11px;
+  padding-bottom: 9px;
 
   border-radius: 5px;
   background-color: #ee3643;
   color: white;
-
+  
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
-  text-align: center;
 }
 
 .button-red:hover,
@@ -427,15 +431,11 @@ fieldset {
 
 /*Услуги промо блока*/
 
-.promo-block {
-  margin-bottom: 20px;
-}
-
 .promo-top {
   display: flex;
+  flex-wrap: wrap;
   width: 940;
   justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .promo-bottom {
@@ -445,14 +445,18 @@ fieldset {
 }
 
 .promo-rigth-side {
-  order: 2;
+  order: 1;
+  margin-bottom: 33px;
 }
 
 .promo-item {
+  box-sizing: border-box;
+
   position: relative;
   width: 300px;
-  min-height: 100px;
-  padding-top: 23px;
+  min-height: 123px;
+  padding-top: 21px;
+  margin-bottom: 20px;
 
   background-color: black;
 }
@@ -468,12 +472,15 @@ fieldset {
 }
 
 .promo-item a {
+  box-sizing: border-box;
+
   position: absolute;
   width: 135px;
   left: 25px;
-  bottom: 23px;
-  min-height: 28px;
+  bottom: 22px;
+  
   padding-top: 10px;
+  padding-bottom: 10px;
 
   font-size: 14px;
   line-height: 18px;
@@ -605,15 +612,13 @@ fieldset {
 }
 
 .slide {
+  box-sizing: border-box;
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-
-  width: 595px;
-  height: 239px;
+  width: 620px;
+  height: 266px;
   padding-left: 25px;
-  padding-top: 27px;
+  padding-top: 21px;
 
   background-color: black;
   background-position: 50% 50%;
@@ -633,13 +638,13 @@ fieldset {
 
 .slide h3 {
   margin: 0;
-
+  margin-bottom: 1px;
   font-size: 36px;
   text-transform: uppercase
 }
 
 .slide p {
-  margin: 8px 0 0 0;
+  margin: 0;
 
   font-size: 18px;
 }
@@ -650,11 +655,9 @@ fieldset {
   bottom: 22px;
 
   width: 195px;
+  padding-left: 49px;
 
   z-index: 5;
-
-  font-size: 14px;
-  line-height: 38px;
 }
 
 .slider-button {
@@ -665,35 +668,53 @@ fieldset {
   background: none;
 }
 
-.prefious-slide {
-  left: 25px;
+.slider-button::before {
+  content: '';
+  display: block;
+
+  width: 22px;
+  height: 40px;
+
+  background-image: url(/img/icon-left.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.next-slide {
+  transform: rotate(180deg);
+}
+
+.previous-slide {
+  left: 20px;
 }
 
 .next-slide{
-  right: 25px;
+  right: 15px;
 }
 
 .slider-pagination {
   position: absolute;
-  bottom: 36px;
-
-  width: auto;
+  bottom: 32px;
+  left: 0;
+  right: 0;
 
   text-align: center;
 }
 .pg-button {
   display: inline-block;
-  width: 9px;
-  height: 9px;
+  vertical-align: middle;
+  width: 10px;
+  height: 10px;
   padding: 0;
   margin: 0;
 
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 50%;
   background-color: white;
 }
 
 .pg-second {
+  margin-left: 5px;
   background-color: #ee3643;
 }
 
@@ -702,23 +723,27 @@ fieldset {
 /*Стили заголовков товаров и производителей*/
 
 .content-header {
+  box-sizing: border-box;
+
   position: relative;
   width: 940px;
   margin-bottom: 20px;
-
-  line-height: 89px;
+  padding-top: 30px;
+  padding-bottom: 29px;
 
   background-color: #f9f5f0;
 }
 
 .content-header h2 {
   display: inline;
-  margin-left: 30px;
+  margin-left: 28px;
 
   font-size: 30px;
+  line-height: 30px;
  
   text-transform: uppercase;
   vertical-align: middle;
+  font-weight: 400;
 
   color: #32425c;
 }
@@ -726,13 +751,12 @@ fieldset {
 .content-header a {
   position: absolute;
   display: block;
+  
   right: 24px;
   bottom: 26px;
   width: 253px;
-  
-  font-size: 14px;
-  text-transform: uppercase;
-  line-height: 38px;
+
+  text-align: center;
 }
 
 /*Конец стилей для заголовков товаров и производителей*/
@@ -742,9 +766,11 @@ fieldset {
 .goods-list {
   display: flex;
   flex-wrap: wrap;
+
   width: 940px;
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -752,9 +778,11 @@ fieldset {
   position: relative;
   display: flex;
   flex-direction: column;
+  
   width: 218px;
   min-height: 316px;
   margin-bottom: 20px;
+  
   border: 1px solid #eaeaea;
   
   font-family: "PT Sans", Arial, sans-serif;
@@ -832,7 +860,7 @@ fieldset {
 
   width: 170px;
   margin: 0 auto;
-  margin-top: 11px;
+  margin-top: 9px;
 
   font-size: 18px;
   line-height: 20px;
@@ -2153,12 +2181,12 @@ fieldset {
 }
 
 .visually-hidden {
-	position: absolute !important;
+	position: absolute;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
+	padding:0;
+	border:0;
+	height: 1px; 
+	width: 1px; 
 	overflow: hidden;
 }
