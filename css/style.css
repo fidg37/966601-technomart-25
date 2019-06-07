@@ -203,7 +203,7 @@ fieldset {
   width: 14px;
   height: 16px;
 
-  background-image: url(/img/icon-bookmark.svg);
+  background-image: url(../img/icon-bookmark.svg);
 }
 
 .cart {
@@ -217,7 +217,7 @@ fieldset {
   width: 15px;
   height: 15px;
 
-  background-image: url(/img/cart-icon.svg);
+  background-image: url(../img/cart-icon.svg);
 }
 
 .order-button {
@@ -290,7 +290,7 @@ fieldset {
 }
 
 .our-address::before {
-  content: url(/img/icon-phone.svg);
+  content: url(../img/icon-phone.svg);
   position: absolute;
   top: 13px;
   left: 15px;
@@ -520,7 +520,7 @@ fieldset {
   right: 43px;
   bottom: 29px;
   
-  background-image: url(/img/icon-1.svg);
+  background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -538,7 +538,7 @@ fieldset {
   right: 28px;
   bottom: 29px;
   
-  background-image: url(/img/icon-2.svg);
+  background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -556,7 +556,7 @@ fieldset {
   right: 31px;
   bottom: 30px;
   
-  background-image: url(/img/icon-3.svg);
+  background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -576,7 +576,7 @@ fieldset {
   right: 45px;
   bottom: 25px;
   
-  background-image: url(/img/icon-4.svg);
+  background-image: url(../img/icon-4.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -594,7 +594,7 @@ fieldset {
   right: 31px;
   bottom: 28px;
   
-  background-image: url(/img/icon-5.svg);
+  background-image: url(../img/icon-5.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -633,12 +633,12 @@ fieldset {
 
 .slide-first {
   display: none;
-  background-image: url(/img/slide-1.jpg);
+  background-image: url(../img/slide-1.jpg);
 }
 
 .slide-second {
   display: block;
-  background-image: url(/img/slide-2.jpg);
+  background-image: url(../img/slide-2.jpg);
 }
 
 .slide h3 {
@@ -680,7 +680,7 @@ fieldset {
   width: 22px;
   height: 40px;
 
-  background-image: url(/img/icon-left.svg);
+  background-image: url(../img/icon-left.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -859,7 +859,7 @@ fieldset {
   width: 15px;
   height: 15px;
 
-  background-image: url(/img/cart-icon.svg);
+  background-image: url(../img/cart-icon.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 
@@ -1151,7 +1151,7 @@ fieldset {
   right: 2px;
   width: 468px;
   height: 261px;
-  background-image: url(/img/delivery.png);
+  background-image: url(../img/delivery.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -1163,7 +1163,7 @@ fieldset {
   right: -8px;
   width: 389px;
   height: 283px;
-  background-image: url(/img/warranty.png);
+  background-image: url(../img/warranty.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -1175,7 +1175,7 @@ fieldset {
   right: -10px;
   width: 465px;
   height: 285px;
-  background-image: url(/img/credit.png);
+  background-image: url(../img/credit.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -1321,6 +1321,19 @@ fieldset {
   line-height: 20px;
 }
 
+.delivery-list li::before {
+  content: '';
+  
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+
+  background-color: #ee3643;
+}
+
 .delivery-list svg {
   position: absolute;
   left: 0;
@@ -1355,7 +1368,7 @@ fieldset {
 .footer-top {
   width: 100%;
   min-height: 193px;
-  margin-top: 86px;
+  margin-top: 86.5px;
 
   background-color: #32425c;
 }
@@ -1390,15 +1403,17 @@ fieldset {
   top: 0;
   left: 10;
   height: 68px;
+  padding-top: 15px;
+  padding-left: 42px;
 
-  line-height: 68px;
+  font-size: 30px;
 }
 
 .footer-navigation {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 39px;
+  margin-top: 37px;
   margin-bottom: 36px;
   margin-left: auto;
 }
@@ -1433,7 +1448,7 @@ fieldset {
 
 .footer-address p {
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 .main-footer address a {
@@ -1489,30 +1504,47 @@ fieldset {
 
 .social-buttons ul {
   display: flex;
-  justify-content: space-between;
   width: 132px;
   margin: 0;
   padding: 0;
 }
 
 .social-button {
-  justify-content: center;
   position: relative;
   display: block;
   width: 40px;
   height: 40px;
+  margin-right: 5px;
+
   border-radius: 50%;
 
   background-color: #212a3a;
 }
 
-.social-button svg {
+.social-button::before {
+  content: '';
+
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.vkontakte::before {
+  background-image: url(../img/vk-icon.svg);
+}
+
+.facebook::before {
+  background-image: url(../img/fb-icon.svg);
+}
+
+.instagram::before {
+  background-image: url(../img/insta-icon.svg);
 }
 
 .footer-bottom p {
@@ -1522,7 +1554,8 @@ fieldset {
 
 .footer-bottom p:last-of-type {
   width: 111px;
-  margin-left: 52px;
+  margin-left: 48px;
+  margin-right: 2px;
 }
 
 .social-button:hover,
@@ -1631,7 +1664,7 @@ fieldset {
   width: 21px;
   height: 21px;
 
-  background-image: url(/img/modal-close.svg);
+  background-image: url(../img/modal-close.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -1798,7 +1831,7 @@ fieldset {
   height: 12px;
   margin: 0 16px;
 
-  background-image: url(/img/icon-right-small.svg);
+  background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1814,7 +1847,7 @@ fieldset {
   width: 14px;
   height: 12px;
 
-  background-image: url(/img/icon-home.svg);
+  background-image: url(../img/icon-home.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -1969,7 +2002,7 @@ fieldset {
   width: 700px;
 }
 
-.goods-item-catalog:nth-child(3n + 3) {
+.goods-item-catalog:nth-child(3n) {
   margin-right: 0px;
 }
 
@@ -2023,7 +2056,7 @@ fieldset {
   width: 23px;
   height: 23px;
   
-  background-image: url(/img/checkbox-off.svg);
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -2031,7 +2064,7 @@ fieldset {
 .manufacturers-form-list input:checked ~ ::after {
   width: 27px;
 
-  background-image: url(/img/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
 }
 
 .manufacturers-form {
@@ -2049,13 +2082,13 @@ fieldset {
   width: 25px;
   height: 25px;
   
-  background-image: url(/img/radio-off.svg);
+  background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .power-type input:checked ~ ::after {
-  background-image: url(/img/radio-on.svg);
+  background-image: url(../img/radio-on.svg);
 }
 
 .filters .power-form {
@@ -2211,7 +2244,7 @@ fieldset {
 
   z-index: 5;
 
-  background-image: url(/img/new-flag.png);
+  background-image: url(../img/new-flag.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
