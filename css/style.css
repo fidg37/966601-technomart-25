@@ -224,8 +224,13 @@ fieldset {
   background-color: #63a63e;
 }
 
-.top-button:hover::before {
+.top-button:hover::before,
+.top-button:focus::before {
   opacity: 1;
+}
+
+.top-button:active::before {
+  opacity: 0.3;
 }
 
 .top-button:hover,
@@ -790,6 +795,11 @@ fieldset {
   line-height: 18px;
 }
 
+.goods-item img {
+  width: 218px;
+  height: 170px;
+}
+
 .goods-item {
   margin-right: 20px;
 }
@@ -825,6 +835,8 @@ fieldset {
 }
 
 .buy-button {
+  position: relative;
+
   width: 86px;
   min-height: 28px;
   padding-left: 49px;
@@ -835,6 +847,23 @@ fieldset {
   background-color: #63a63e;
   box-shadow: inset 0 -5px 0 0 #367315;
   color: white;
+}
+
+.buy-button::before {
+  content: '';
+
+  position: absolute;
+
+  top: 11px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+
+  background-image: url(/img/cart-icon.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
 }
 
 .buy-button svg {
@@ -930,11 +959,9 @@ fieldset {
   background-color: #5fbb2d;
 }
 
-.buy-button:hover svg circle,
-.buy-button:hover svg polygon,
-.buy-button:focus svg circle,
-.buy-button:focus svg polygon {
-  fill: white;
+.buy-button:hover::before,
+.buy-button:focus::before {
+  opacity: 1;
 }
 
 .buy-button:active {
@@ -965,17 +992,18 @@ fieldset {
 }
 
 .manufacturers a {
+  box-sizing: content-box;
   position: relative;
   
   width: 218px;
-  height: 141px;
+  height: 143px;
   margin-right: 20px;
   margin-bottom: 20px;
 
   border: 1px solid #eaeaea;
 }
 
-.manufacturers a:nth-child(4n + 4) {
+.manufacturers a:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1046,9 +1074,14 @@ fieldset {
   margin-bottom: 0;
 }
 
+.services h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .services-header h3 {
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 
   font-size: 30px;
   line-height: 30px;
@@ -1092,7 +1125,7 @@ fieldset {
 
 .services-list h3 {
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 23px;
 
   font-size: 36px;
   line-height: 36px;
@@ -1115,7 +1148,7 @@ fieldset {
   content: '';
   position: absolute;
   bottom: 0;
-  right: -10px;
+  right: 2px;
   width: 468px;
   height: 261px;
   background-image: url(/img/delivery.png);
@@ -1127,9 +1160,9 @@ fieldset {
   content: '';
   position: absolute;
   bottom: 0;
-  right: -20px;
-  width: 468px;
-  height: 261px;
+  right: -8px;
+  width: 389px;
+  height: 283px;
   background-image: url(/img/warranty.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1242,19 +1275,24 @@ fieldset {
 .about-us h2,
 .about-us h3 {
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 25px;
 
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .about-us p {
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+}
+
+.about-us img {
+  margin-top: 7px;
 }
 
 .about-us-left p:last-of-type {
@@ -1268,6 +1306,7 @@ fieldset {
 
 .delivery-list {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   list-style: none;
 }
@@ -1275,7 +1314,7 @@ fieldset {
 .delivery-list li {
   position: relative;
   padding-left: 36px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
@@ -1292,12 +1331,9 @@ fieldset {
 
 .about-us .button-red {
   position: absolute;
-  min-height: 26px;
-  padding-top: 12px;
 
   font-family: "Cuprum", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px; 
+  text-align: center;
 }
 
 .about-us-left .button-red {
