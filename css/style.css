@@ -45,6 +45,7 @@ a {
 }
 
 .logo {
+  box-sizing: border-box;
   display: block;
   width: 220px;
 
@@ -52,8 +53,7 @@ a {
   color: #ffffff;
   box-shadow: inset 0 -5px 0 0 #b52933;
 
-  text-align: center;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -79,14 +79,17 @@ fieldset {
 
 .main-header,
 .inner-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   min-height: 320px;
   margin-bottom: 59px;
 
   font-size: 17px;
   line-height: 18px;
+}
+
+.main-header > .container,
+.inner-header > .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .header-top-wrapper {
@@ -95,10 +98,6 @@ fieldset {
   margin-bottom: 46px;
 
   background-color: #293449;
-}
-
-.header-top-wrapper svg {
-  position: absolute;
 }
 
 .main-header .container {
@@ -111,19 +110,21 @@ fieldset {
   position: absolute;
   top: 0;
   left: 10;
-  min-height: 34px;
-  padding-top: 13px;
+  min-height: 47px;
+  padding-top: 14px;
+  padding-left: 55px;
+  padding-right: 56px;
 }
 
 .search-form {
   position: relative;
-  width: 250px;
+  width: 270px;
   margin-left: 220px;
 }
 
 .search-form input {
   min-height: 42px;
-  width: 250px;
+  width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: content-box;
@@ -132,6 +133,13 @@ fieldset {
   text-indent: 49px;
 
   background-color: #293449;
+}
+
+.search-form svg {
+  position: absolute;
+
+  top: 12px;
+  left: 17px;
 }
 
 .search-form input::placeholder {
@@ -154,86 +162,84 @@ fieldset {
   fill: #ee3643;
 }
 
-.search-img {
-  top: 12px;
-  left: 17px;
+.header-top-wrapper .layout {
+  width: 450px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .top-button {
+  box-sizing: border-box;
   position: relative;
-  width: 160px;
-  min-height: 42px;
-}
-
-.top-button a {
-  display: block;
-  width: auto;
-  min-height: 29px;
-  padding-top: 13px;
+  width: 150px;
+  padding: 13px 20px;
+  padding-bottom: 11px;
   
   color: white;
 }
 
-.bookmarks a {
-  text-indent: 64px;
+.top-button::before {
+  content: '';
+
+  position: absolute;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  opacity: 0.3;
 }
 
-.bookmarks-img {
+.bookmarks {
+  padding-left: 44px;
+}
+
+.bookmarks::before {
   top: 12px;
-  left: 37px;
+  left: 17px;
+
+  width: 14px;
+  height: 16px;
+
+  background-image: url(/img/icon-bookmark.svg);
 }
 
-.cart a {
-  text-indent: 59px;
+.cart {
+  padding-left: 50px;
 }
 
-.cart-img {
+.cart::before {
   top: 12px;
-  left: 28px;
+  left: 18px;
+
+  width: 15px;
+  height: 15px;
+
+  background-image: url(/img/cart-icon.svg);
 }
 
 .order-button {
-  width: 150px;
-}
-
-.order-button a {
-  text-indent: 20px;
-
   background-color: #63a63e;
 }
 
-.top-button a:hover,
-.top-button a:focus {
+.top-button:hover::before {
+  opacity: 1;
+}
+
+.top-button:hover,
+.top-button:focus {
   background-color: #212a3a;
 }
 
-.top-button a:hover + svg path,
-.top-button a:focus + svg path,
-.top-button a:hover + svg circle,
-.top-button a:focus + svg circle,
-.top-button a:hover + svg polygon,
-.top-button a:focus + svg polygon {
-  fill: white;
-}
-
-.top-button a:active {
+.top-button:active {
   background-color: #161d29;
   color: #8b8e94;
 }
 
-.top-button a:active + svg path,
-.top-button a:active + svg path,
-.top-button a:active + svg circle,
-.top-button a:active + svg polygon {
-  fill: #8b8e94;
-}
-
-.order-button a:hover,
-.order-button a:focus {
+.order-button:hover,
+.order-button:focus {
   background-color: #5fbb2d;
 }
 
-.order-button a:active {
+.order-button:active {
   background-color: #518534;
   color: #a8c29a;
 }
@@ -243,20 +249,25 @@ fieldset {
 .header-middle-part {
   display: flex;
   width: 940px;
-  margin-bottom: auto;
+  margin-bottom: 25px;
 }
 
 .main-title {
+  margin-top: 3px;
+  margin-bottom: 0;
   margin-left: 52px;
+
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
+  font-weight: 400;
+
   color: #ee3643;
 }
 
 .our-address {
   position: relative;
-  margin-left: 71px;
+  margin-left: 72px;
   margin-right: auto;
   width: 270px;
   font-size: 21px;
@@ -295,13 +306,14 @@ fieldset {
 }
 
 .our-address p {
-  margin-top: 5px;
+  margin-top: 4px;
   font-size: 14px;
   line-height: 24px;
 }
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 281px;
   min-height: 45px;
   justify-content: space-between;
@@ -312,7 +324,7 @@ fieldset {
 
 .user-navigation a {
   display: block;
-  padding-top: 14px;
+  padding-top: 13px;
   min-height: 31px;
 
   font-size: 21px;
@@ -347,10 +359,10 @@ fieldset {
   color: #ee3643;
 }
 
-.login a:hover + svg polygon,
-.login a:hover + svg path,
-.login a:focus + svg polygon,
-.login a:focus + svg path {
+.login a:hover svg polygon,
+.login a:hover svg path,
+.login a:focus svg polygon,
+.login a:focus svg path {
   fill: #32425c;
 }
 
@@ -358,8 +370,8 @@ fieldset {
   color: #c5c5c5;
 }
 
-.login a:active + svg polygon,
-.login a:active + svg path {
+.login a:active svg polygon,
+.login a:active svg path {
   fill: #c5c5c5;
 }
 
@@ -371,21 +383,30 @@ fieldset {
 
 .navigation-list {
   display: flex;
-  width: 940px;
-  list-style: none;
+  flex-wrap: wrap;
+  
+  width: 900px;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  
+  list-style: none;
 }
 
 .navigation-list li {
   flex-grow: 1;
+
   font-size: 17px;
-  line-height: 60px;
+  line-height: 17px;
   text-align: center;
 }
 
 .navigation-list a {
+  box-sizing: border-box;
+
   display: block;
+  padding: 0 10px;
+  padding-top: 21px;
+  padding-bottom: 22px;
 
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
