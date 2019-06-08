@@ -1721,13 +1721,17 @@ fieldset {
 /*Стили для хедера каталога*/
 
 .inner-header {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .user-navigation-active {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.user-navigation-active li {
+  position: relative;
 }
 
 .user-navigation-active a {
@@ -1815,6 +1819,20 @@ fieldset {
   margin-left: 32px;
 }
 
+.settings::before {
+  content: '';
+  
+  position: absolute;
+  left: -21px;
+  top: 8px;
+
+  width: 4px;
+  height: 3px;
+
+  border-radius: 50%;
+  background-color: #32425c;
+}
+
 .my-orders a,
 .settings a {
   font-size: 16px;
@@ -1843,7 +1861,7 @@ fieldset {
   display: flex;
   list-style: none;
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -1856,9 +1874,11 @@ fieldset {
   color: black;
 }
 
+
 .breadcrumbs li::before {
   content: '';
   display: inline-block;
+  vertical-align: middle;
 
   width: 8px;
   height: 12px;
@@ -1878,11 +1898,11 @@ fieldset {
   display: block;
   
   width: 14px;
-  height: 12px;
+  height: 15px;
 
   background-image: url(../img/icon-home.svg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 3px;
 }
 
 /*Конец стилей для хлебных крошек*/
@@ -1891,8 +1911,8 @@ fieldset {
 
 .catalog-header {
 
-  padding-top: 32px;
-  padding-bottom: 34px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 28px;
   margin: 0;
   margin-bottom: 20px;
@@ -1954,8 +1974,8 @@ fieldset {
   width: 681px;
   margin: 0;
   padding-left: 19px;
-  padding-top: 11px;
-  padding-bottom: 13px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 
   background-color: #f7f3ec;
 
@@ -1967,7 +1987,7 @@ fieldset {
 }
 
 .sorting-price {
-  margin-right: 42px;
+  margin-right: 70px;
 }
 
 .sorting-type {
@@ -2020,7 +2040,7 @@ fieldset {
   width: 201px;
   padding-left: 19px;
   padding-top: 11px;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
 
   background-color: #f7f3ec;
 
@@ -2125,7 +2145,7 @@ fieldset {
 }
 
 .filters .power-form {
-  margin-bottom: 78px;
+  margin-bottom: 56px;
 }
 
 .filters legend {
@@ -2150,6 +2170,10 @@ fieldset {
   text-transform: uppercase;
 }
 
+.manufacturers-form-list {
+  margin-bottom: 23px;
+}
+
 .show-button {
   width: 138px;
   min-height: 38px;
@@ -2171,6 +2195,7 @@ fieldset {
 
 .pagination-layout {
   display: flex;
+  margin-top: 32px;
 }
 
 .pagination-list {
@@ -2181,7 +2206,7 @@ fieldset {
 }
 
 .pagination-list li {
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .pagination-item a,
@@ -2201,6 +2226,8 @@ fieldset {
 
 .pagination-control {
   width: 140px;
+
+  text-transform: uppercase;
 }
 
 .pagination-item a:hover,
@@ -2234,14 +2261,14 @@ fieldset {
 }
 
 .information {
-  padding-top: 68px;
+  padding-top: 65px;
 
   font-family: "PT Sans", Arial, sans-serif;
 }
 
 .information h2 {
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
@@ -2265,6 +2292,80 @@ fieldset {
 }
 
 /*Конец стилей для футера каталога*/
+
+/*Всплывающие окна каталога*/
+
+.modal-cart {
+  display: flex;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 150px;
+
+  z-index: 6;
+
+  box-sizing: border-box;
+
+  width: 620px;
+  padding: 0 80px;
+  padding-top: 43px;
+  padding-bottom: 32px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+
+  box-shadow: 
+    inset 0 7px 0 0 #ff5257,
+    inset 0 -112px 0 0 #f4f4f4,
+    0 20px 40px 0 rgba(0, 0, 0, 0.75)
+  ;
+
+  background-color: white;
+}
+
+.modal-cart p {
+  position: relative;
+
+  width: 100%;
+  padding-left: 100px;
+  margin-bottom: 106px;
+
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-cart p::before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: 0;
+  width: 66px;
+  height: 66px;
+
+  background-image: url(../img/form-1.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.modal-cart .button-red {
+  width: 220px;
+
+  text-align: center;
+}
+
+.modal-cart .continue {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+
+
+/*Конец стилей всплывающих окон каталога*/
 
 .new-flag::before {
   content: '';
