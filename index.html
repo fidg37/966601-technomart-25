@@ -304,10 +304,10 @@
               заехав в наш офис:
           </p>
           <p class="map">
-            <a href="map.html" aria-label="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            <a class="map-link" href="map.html" aria-label="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
               <img src="img/map.png" alt="Карта" width="auto" height="auto">
             </a>
-            <a class="button-red" href="#">Заблудились? Напишите нам!</a>
+            <a class="button-red write-us-button" href="#">Заблудились? Напишите нам!</a>
           </p>
         </div>
       </section>
@@ -377,15 +377,15 @@
       <form class="write-us-form" action="echo.htmlacademy.ru" method="GET">
         <label class="name">
           <span>Ваше имя:</span>
-          <input type="text" name="name" placeholder="Имя Фамилия">
+          <input class="user-name" type="text" name="name" placeholder="Имя Фамилия">
         </label>
         <label class="email">
           <span>Ваш e-mail:</span>
-          <input type="email" name="email" placeholder="email@example.com">
+          <input class="user-email" type="email" name="email" placeholder="email@example.com">
         </label>
         <label class="message">
           <span>Текст письма:</span>
-          <textarea name="text" placeholder="В свободной форме"></textarea>
+          <textarea class="user-text" name="text" placeholder="В свободной форме"></textarea>
         </label>
         <button type="submit" class="button-red">Отправить</button>
       </form>
@@ -394,7 +394,11 @@
       
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCGReN0O" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
       <button type="button" class="modal-close" aria-label="Закрыть окно с картой"></button>
     </section>
+    <div class="overlay"></div>
+    <script src="js/popupWriteUs.js"></script>
+    <script src="js/popupMap.js"></script>
   </body>
 </html>

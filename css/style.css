@@ -1573,8 +1573,6 @@ fieldset {
 /*Стили для всплывающих окон*/
 
 .modal-contact-form {
-  display: none;
-
   position: fixed;
   margin: auto;
   left: 0;
@@ -1671,8 +1669,6 @@ fieldset {
 }
 
 .modal-map {
-  display: none;
-
   position: fixed;
   margin: auto;
   left: 0;
@@ -1718,6 +1714,195 @@ fieldset {
 .modal-close:focus::after {
   background-color: #ba2732;
 }
+
+/*Всплывающие окна каталога*/
+
+.modal-cart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 150px;
+
+  z-index: 6;
+
+  box-sizing: border-box;
+
+  width: 620px;
+  padding: 0 80px;
+  padding-top: 43px;
+  padding-bottom: 32px;
+
+  font-family: "Cuprum", Arial, sans-serif;
+
+  box-shadow: 
+    inset 0 7px 0 0 #ff5257,
+    inset 0 -112px 0 0 #f4f4f4,
+    0 20px 40px 0 rgba(0, 0, 0, 0.75)
+  ;
+
+  background-color: white;
+}
+
+.modal-cart p {
+  position: relative;
+
+  width: 100%;
+  padding-left: 100px;
+  margin-bottom: 106px;
+
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-cart p::before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: 0;
+  width: 66px;
+  height: 66px;
+
+  background-image: url(../img/form-1.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.modal-cart .button-red {
+  width: 220px;
+
+  text-align: center;
+}
+
+.modal-cart .continue {
+  border: none;
+  background-color: white;
+  color: black;
+}
+
+.continue:hover,
+.continue:focus {
+  background-color: #5fbb2d;
+  color: white;
+}
+
+.continue:active {
+  background-color: #518534;
+  color: white;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.cart-show {
+  display: flex;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.text-error::placeholder {
+  color: red;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background-color: black;
+  opacity: 0.3;
+}
+
+.overlay-active {
+  display: block;
+}
+
+/*Анимации всплывающих окон*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes map-shake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-10px);
+  }
+
+  60% {
+    transform: translateY(10px);
+  }
+}
+
+.map-link:hover,
+.map-link:focus {
+  display: block;
+  animation: map-shake 0.6s;
+}
+
+
+/*Конец анимаций всплывающих окон*/
+
+/*Конец стилей всплывающих окон каталога*/
+
 /*Стили для хедера каталога*/
 
 .inner-header {
@@ -1852,8 +2037,6 @@ fieldset {
 .settings a:active {
   color: #b2b2b2;
 }
-
-/*Конец стилей хедера каталога*/
 
 /*Стили для хлебных крошек*/
 
@@ -2293,79 +2476,6 @@ fieldset {
 
 /*Конец стилей для футера каталога*/
 
-/*Всплывающие окна каталога*/
-
-.modal-cart {
-  display: flex;
-  display: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  position: fixed;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 150px;
-
-  z-index: 6;
-
-  box-sizing: border-box;
-
-  width: 620px;
-  padding: 0 80px;
-  padding-top: 43px;
-  padding-bottom: 32px;
-
-  font-family: "Cuprum", Arial, sans-serif;
-
-  box-shadow: 
-    inset 0 7px 0 0 #ff5257,
-    inset 0 -112px 0 0 #f4f4f4,
-    0 20px 40px 0 rgba(0, 0, 0, 0.75)
-  ;
-
-  background-color: white;
-}
-
-.modal-cart p {
-  position: relative;
-
-  width: 100%;
-  padding-left: 100px;
-  margin-bottom: 106px;
-
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.modal-cart p::before {
-  content: '';
-  position: absolute;
-  top: -17px;
-  left: 0;
-  width: 66px;
-  height: 66px;
-
-  background-image: url(../img/form-1.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.modal-cart .button-red {
-  width: 220px;
-
-  text-align: center;
-}
-
-.modal-cart .continue {
-  border: none;
-  background-color: white;
-  color: black;
-}
-
-
-
-/*Конец стилей всплывающих окон каталога*/
 
 .new-flag::before {
   content: '';
