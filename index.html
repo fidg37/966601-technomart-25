@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -45,7 +46,7 @@
             <li class="login">
               <a  href="#">
                 Войти
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
                 <g>
                   <polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
                 </g>
@@ -105,15 +106,15 @@
                     <p>Настоящие мужские игрушки</p>
                     <a class="button-red" href="catalog.html">Открыть каталог</a>
                 </li>
-                <li class="slide slide-second">               
+                <li class="slide slide-second  slide-current">               
                   <h3>Дрели</h3>
                   <p>Соседям на радость!</p>
                   <a class="button-red" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
               <div class="slider-pagination">
-                <button type="button" class="pg-button pg-first" aria-label="Первый слайд"></button>
-                <button type="button" class="pg-button pg-second" aria-label="Второй слайд"></button>
+                <button type="button" class="pg-button" aria-label="Первый слайд"></button>
+                <button type="button" class="pg-button pg-current" aria-label="Второй слайд"></button>
               </div>            
               <button type="button" class="slider-button previous-slide" aria-label="Предыдущий слайд"></button>            
               <button type="button" class="slider-button next-slide" aria-label="Следующий слайд"></button>
@@ -189,7 +190,7 @@
             <h2>Популярные производители:</h2>
             <a class="button-red" href="catalog.html">Все производители</a>
           </header>
-          <div class="manufacturers"></ul>          
+          <div class="manufacturers">         
             <a href="catalog-manufacturer-1.html" aria-label="Bosch">
               <img src="img/bosch.png" alt="Bosch" width="126" height="37">
             </a>                
@@ -305,7 +306,7 @@
           </p>
           <p class="map">
             <a class="map-link" href="map.html" aria-label="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-              <img src="img/map.png" alt="Карта" width="auto" height="auto">
+              <img src="img/map.png" alt="Карта" width="300" height="158">
             </a>
             <a class="button-red write-us-button" href="#">Заблудились? Напишите нам!</a>
           </p>
@@ -367,7 +368,7 @@
           </p>
           <p>
             Разработано —
-            <a href="htmlacademy.ru">htmlacademy.ru</a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>         
         </div>
       </div>
@@ -394,11 +395,12 @@
       
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CCGReN0O" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCGReN0O" width="940" height="446"></iframe>
       <button type="button" class="modal-close" aria-label="Закрыть окно с картой"></button>
     </section>
     <div class="overlay"></div>
     <script src="js/popupWriteUs.js"></script>
     <script src="js/popupMap.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 </html>

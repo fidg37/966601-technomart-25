@@ -243,6 +243,19 @@ fieldset {
   color: #8b8e94;
 }
 
+.cart-full {
+  background-color: #ee3643;
+}
+
+.cart-full:focus,
+.cart-full:hover {
+  background-color: #ca2c37;
+}
+
+.cart-full:active {
+  background-color: #ba2732;
+}
+
 .order-button:hover,
 .order-button:focus {
   background-color: #5fbb2d;
@@ -617,6 +630,7 @@ fieldset {
 }
 
 .slide {
+  display: none;
   box-sizing: border-box;
   position: relative;
 
@@ -631,13 +645,15 @@ fieldset {
   color: white;
 }
 
+.slide-current {
+  display: block;
+}
+
 .slide-first {
-  display: none;
   background-image: url(../img/slide-1.jpg);
 }
 
 .slide-second {
-  display: block;
   background-image: url(../img/slide-2.jpg);
 }
 
@@ -712,14 +728,14 @@ fieldset {
   height: 10px;
   padding: 0;
   margin: 0;
+  margin-right: 5px;
 
   border: 2px solid white;
   border-radius: 50%;
   background-color: white;
 }
 
-.pg-second {
-  margin-left: 5px;
+.pg-current {
   background-color: #ee3643;
 }
 
@@ -1826,9 +1842,6 @@ fieldset {
   height: 100%;
   top: 0;
   left: 0;
-
-  background-color: black;
-  opacity: 0.3;
 }
 
 .overlay-active {
@@ -2252,6 +2265,78 @@ fieldset {
 /*Конец стилей для товаров каталога*/
 
 /*Стили для фильтров*/
+
+.price-range-control {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 5px;
+
+  background-color: #f7f3ec;
+  border-radius: 5px;
+}
+
+.price-range-control::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 2px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+  background-color: #00ca74;
+}
+
+.price-range-button {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 30px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #ababab;
+  
+  border: none;
+  border-radius: 50%;
+
+  box-shadow: 
+    inset 0px 0px 0 8px white,
+    0 2px #e0ddd8  
+  ;
+}
+
+.price-range-button:first-child {
+  left: 20px;
+}
+
+.price-range-button:last-child {
+  right: 20px;
+}
+
+.price-range-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-range-input input {
+  width: 95px;
+  height: 38px;
+  
+  border: none;
+  border-radius: 5px;
+
+  text-align: center;
+
+  background-color: #f7f3ec;
+}
+
+.price-range-input span {
+  align-self: center;
+}
 
 .filters {
   width: 220px;
