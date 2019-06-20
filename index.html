@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/minimizedStyle.css">
   </head>
   <body>
     <header class="main-header">
@@ -398,9 +398,15 @@
       <iframe src="https://yandex.ru/map-widget/v1/-/CCGReN0O" width="940" height="446"></iframe>
       <button type="button" class="modal-close" aria-label="Закрыть окно с картой"></button>
     </section>
+
+    <section class="modal modal-cart">
+      <h2 class="visually-hidden">Добавление товара в корзину</h2>
+      <p>Товар добавлен в корзину!</p>
+      <a href="#" class="button-red">Оформить заказ</a>
+      <button type="button" class="button-red continue">Продолжить покупки</button>
+      <button type="button" class="modal-close" aria-label="Закрыть уведомление корзины"></button>
+    </section>
     <div class="overlay"></div>
-    <script src="js/popupWriteUs.js"></script>
-    <script src="js/popupMap.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/minimizedScripts.js"></script>
   </body>
 </html>

@@ -1,85 +1,3 @@
-//Попап корзина
-
-var cart = document.querySelector(".modal-cart");
-var cartLink = document.querySelectorAll(".buy-button");
-var overlay = document.querySelector(".overlay");
-var cartClose = cart.querySelector(".modal-close");
-var continueButton = cart.querySelector(".continue"); 
-
-for (var i = 0; i < cartLink.length; i++) {
-  cartLink[i].addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cart.classList.add("cart-show");
-    overlay.classList.add("overlay-active");
-  })
-};
-
-cartClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cart.classList.remove("cart-show");
-  overlay.classList.remove("overlay-active");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (cart.classList.contains("cart-show")) {
-      cart.classList.remove("cart-show");
-      overlay.classList.remove("overlay-active"); 
-    }
-  }
-});
-
-overlay.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cart.classList.remove("cart-show");
-  overlay.classList.remove("overlay-active");
-});
-
-continueButton.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cart.classList.remove("cart-show");
-  overlay.classList.remove("overlay-active");
-});
-
-//Попап карта 
-
-var map = document.querySelector(".modal-map");
-var mapLink = document.querySelector(".map-link");
-var mapClose = map.querySelector(".modal-close");
-
-mapLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  map.classList.add("modal-show");
-  overlay.classList.add("overlay-active");
-});
-
-mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    map.classList.remove("modal-show");
-    overlay.classList.remove("overlay-active");
-    console.log("Клик");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (map.classList.contains("modal-show")) {
-      map.classList.remove("modal-show");
-      overlay.classList.remove("overlay-active");
-      
-    }
-  }
-});
-
-overlay.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  map.classList.remove("modal-show");
-  overlay.classList.remove("overlay-active");
-});
-
-//Попап "Напишите нам"
-
 var contactsWindow = document.querySelector(".map-right");
 var writeUsLink = contactsWindow.querySelector(".write-us-button");
 var writeUs = document.querySelector(".modal-contact-form");
@@ -191,6 +109,42 @@ overlay.addEventListener("click", function (evt) {
   }
 });
 
+//Карта
+
+var map = document.querySelector(".modal-map");
+var mapLink = document.querySelector(".map-link");
+var mapClose = map.querySelector(".modal-close");
+
+mapLink.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.add("modal-show");
+  overlay.classList.add("overlay-active");
+});
+
+mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    map.classList.remove("modal-show");
+    overlay.classList.remove("overlay-active");
+    console.log("Клик");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (map.classList.contains("modal-show")) {
+      map.classList.remove("modal-show");
+      overlay.classList.remove("overlay-active");
+      
+    }
+  }
+});
+
+overlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  map.classList.remove("modal-show");
+  overlay.classList.remove("overlay-active");
+});
+
 //Слайдер
 
 var slider = document.querySelector(".promo-slider");
@@ -254,3 +208,47 @@ previousSlide.addEventListener("click", function() {
 for (var i = 0; i < pagination.length; i++) {
   clickHandler(pagination[i], slides[i])
 };
+
+//Корзина
+
+var cart = document.querySelector(".modal-cart");
+var cartLink = document.querySelectorAll(".buy-button");
+var overlay = document.querySelector(".overlay");
+var cartClose = cart.querySelector(".modal-close");
+var continueButton = cart.querySelector(".continue"); 
+
+for (var i = 0; i < cartLink.length; i++) {
+  cartLink[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cart.classList.add("cart-show");
+    overlay.classList.add("overlay-active");
+  })
+};
+
+cartClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cart.classList.remove("cart-show");
+  overlay.classList.remove("overlay-active");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (cart.classList.contains("cart-show")) {
+      cart.classList.remove("cart-show");
+      overlay.classList.remove("overlay-active"); 
+    }
+  }
+});
+
+overlay.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cart.classList.remove("cart-show");
+  overlay.classList.remove("overlay-active");
+});
+
+continueButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cart.classList.remove("cart-show");
+  overlay.classList.remove("overlay-active");
+});
