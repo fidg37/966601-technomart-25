@@ -18,7 +18,6 @@ var clickHandler = function (pgButton, slide) {
   })
 };
 
-
 nextSlide.addEventListener("click", function() {
   for (var i = 0; i < slides.length; i++) {
     if (slides[i].classList.contains("slide-current") && i + 1 < slides.length) {

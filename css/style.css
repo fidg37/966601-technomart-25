@@ -3,12 +3,11 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", Arial, sans-serif;
 }
 
 a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 .main-header,
@@ -16,18 +15,14 @@ a {
   background-color: #f3f7f8;
 }
 
-
-
 .button-red {
   box-sizing: border-box;
   display: block;
   padding-top: 11px;
   padding-bottom: 9px;
-
   border-radius: 5px;
   background-color: #ee3643;
   color: white;
-  
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -52,11 +47,9 @@ a {
   box-sizing: border-box;
   display: block;
   width: 220px;
-
   background-color: #ee3643;
   color: #ffffff;
   box-shadow: inset 0 -5px 0 0 #b52933;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   text-transform: uppercase;
@@ -73,7 +66,7 @@ a {
   box-shadow: inset 0 -5px 0 0 #8e1e26;
 }
 
-fieldset {
+.catalog-content-layout fieldset {
   border: none;
 }
 
@@ -85,13 +78,12 @@ fieldset {
 .inner-header {
   min-height: 320px;
   margin-bottom: 59px;
-
   font-size: 17px;
   line-height: 18px;
 }
 
-.main-header > .container,
-.inner-header > .container {
+.main-header>.container,
+.inner-header>.container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -100,7 +92,6 @@ fieldset {
   width: 100%;
   min-height: 42px;
   margin-bottom: 46px;
-
   background-color: #293449;
 }
 
@@ -113,7 +104,6 @@ fieldset {
 .header-logo {
   position: absolute;
   top: 0;
-  left: 10;
   min-height: 47px;
   padding-top: 14px;
   padding-left: 55px;
@@ -133,36 +123,33 @@ fieldset {
   padding: 0;
   box-sizing: content-box;
   border: none;
-
   text-indent: 49px;
-
   background-color: #293449;
 }
 
 .search-form svg {
   position: absolute;
-
   top: 12px;
   left: 17px;
 }
 
-.search-form input::placeholder {
+.search-input::placeholder {
   color: white;
 }
 
-.search-form input:hover {
+.search-input:hover {
   background-color: #212a3a;
 }
 
-.search-form input:hover + svg path {
+.search-input:hover + svg path {
   fill: white;
 }
 
-.search-form input:focus {
+.search-input:focus {
   background-color: white;
 }
 
-.search-form input:focus + svg path {
+.search-input:focus + svg path {
   fill: #ee3643;
 }
 
@@ -178,17 +165,14 @@ fieldset {
   width: 150px;
   padding: 13px 20px;
   padding-bottom: 11px;
-  
   color: white;
 }
 
 .top-button::before {
   content: '';
-
   position: absolute;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
   opacity: 0.3;
 }
 
@@ -199,10 +183,8 @@ fieldset {
 .bookmarks::before {
   top: 12px;
   left: 17px;
-
   width: 14px;
   height: 16px;
-
   background-image: url(../img/icon-bookmark.svg);
 }
 
@@ -213,10 +195,8 @@ fieldset {
 .cart::before {
   top: 12px;
   left: 18px;
-
   width: 15px;
   height: 15px;
-
   background-image: url(../img/cart-icon.svg);
 }
 
@@ -277,19 +257,18 @@ fieldset {
 .main-title {
   margin-top: 3px;
   margin-bottom: 0;
+  width: 197px;
   margin-left: 52px;
-
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
   font-weight: 400;
-
   color: #ee3643;
 }
 
 .our-address {
   position: relative;
-  margin-left: 72px;
+  margin-left: 70px;
   margin-right: auto;
   width: 270px;
   font-size: 21px;
@@ -298,7 +277,7 @@ fieldset {
   font-style: normal;
 }
 
-.our-address a + p {
+.our-address a+p {
   text-align: center;
 }
 
@@ -309,16 +288,14 @@ fieldset {
   left: 15px;
 }
 
-.our-address a{
+.our-address a {
   display: block;
   width: 264px;
   min-height: 29px;
   padding-top: 10px;
   border: 3px solid #ffffff;
-
   color: #ee3643;
   background-color: #f3f7f8;
-
   font-size: 21px;
   line-height: 21px;
 }
@@ -348,10 +325,8 @@ fieldset {
   display: block;
   padding-top: 13px;
   min-height: 31px;
-
   font-size: 21px;
   line-height: 21px;
-  
   color: #000000;
   background-color: #ffffff;
 }
@@ -381,10 +356,10 @@ fieldset {
   color: #ee3643;
 }
 
-.login a:hover svg polygon,
-.login a:hover svg path,
-.login a:focus svg polygon,
-.login a:focus svg path {
+.login-button:hover .login-polygon,
+.login-button:hover .login-path,
+.login-button:focus .login-polygon,
+.login-button:focus .login-path {
   fill: #32425c;
 }
 
@@ -392,31 +367,28 @@ fieldset {
   color: #c5c5c5;
 }
 
-.login a:active svg polygon,
-.login a:active svg path {
+.login-button:active .login-polygon,
+.login-button:active .login-path {
   fill: #c5c5c5;
 }
 
 .main-navigation {
   margin-bottom: 60px;
   background-color: #32425c;
-  box-shadow: inset 0 -5px 0 0 #293449;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  
-  width: 900px;
+  width: 940px;
   margin: 0;
-  padding: 0 20px;
-  
+  padding: 0;
   list-style: none;
 }
 
 .navigation-list li {
+  flex-basis: 127px;
   flex-grow: 1;
-
   font-size: 17px;
   line-height: 17px;
   text-align: center;
@@ -424,12 +396,10 @@ fieldset {
 
 .navigation-list a {
   box-sizing: border-box;
-
   display: block;
   padding: 0 10px;
   padding-top: 21px;
   padding-bottom: 22px;
-
   background-color: #32425c;
   box-shadow: inset 0 -5px 0 0 #293449;
   color: #ffffff;
@@ -469,45 +439,35 @@ fieldset {
 
 .promo-item {
   box-sizing: border-box;
-
   position: relative;
   width: 300px;
   min-height: 123px;
   padding-top: 21px;
   margin-bottom: 20px;
-
-  background-color: black;
 }
 
 .promo-item h3 {
   margin: 0px;
   margin-left: 22px;
-
   font-size: 24px;
-  line-height: 30px; 
-
+  line-height: 30px;
   color: #ffffff;
 }
 
 .promo-item a {
   box-sizing: border-box;
-
   position: absolute;
   width: 135px;
   left: 25px;
   bottom: 22px;
-  
   padding-top: 10px;
   padding-bottom: 10px;
-
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-
   background-color: rgba(0, 0, 0, 0.1);
   color: #ffffff;
-
   border-radius: 5px;
 }
 
@@ -526,13 +486,11 @@ fieldset {
 
 .materials::after {
   content: '';
-  
   position: absolute;
   width: 44px;
   height: 65px;
   right: 43px;
   bottom: 29px;
-  
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -544,13 +502,11 @@ fieldset {
 
 .tools::after {
   content: '';
-  
   position: absolute;
   width: 75px;
   height: 61px;
   right: 28px;
   bottom: 29px;
-  
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -562,13 +518,11 @@ fieldset {
 
 .tech::after {
   content: '';
-  
   position: absolute;
   width: 78px;
   height: 62px;
   right: 31px;
   bottom: 30px;
-  
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -576,19 +530,16 @@ fieldset {
 
 .discounts {
   margin-bottom: 20px;
-
   background-color: #8ed78f;
 }
 
 .discounts::after {
   content: '';
-  
   position: absolute;
   width: 59px;
   height: 72px;
   right: 45px;
   bottom: 25px;
-  
   background-image: url(../img/icon-4.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -600,13 +551,11 @@ fieldset {
 
 .delivery::after {
   content: '';
-  
   position: absolute;
   width: 78px;
   height: 63px;
   right: 31px;
   bottom: 28px;
-  
   background-image: url(../img/icon-5.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -618,7 +567,6 @@ fieldset {
 
 .promo-slider {
   position: relative;
-
   width: 620px;
   height: 266px;
 }
@@ -633,12 +581,10 @@ fieldset {
   display: none;
   box-sizing: border-box;
   position: relative;
-
   width: 620px;
   height: 266px;
   padding-left: 25px;
   padding-top: 21px;
-
   background-color: black;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -666,7 +612,6 @@ fieldset {
 
 .slide p {
   margin: 0;
-
   font-size: 18px;
 }
 
@@ -674,17 +619,14 @@ fieldset {
   position: absolute;
   left: 25px;
   bottom: 22px;
-
   width: 195px;
   padding-left: 49px;
-
   z-index: 5;
 }
 
 .slider-button {
   position: absolute;
   bottom: 112px;
-
   border: none;
   background: none;
 }
@@ -692,10 +634,8 @@ fieldset {
 .slider-button::before {
   content: '';
   display: block;
-
   width: 22px;
   height: 40px;
-
   background-image: url(../img/icon-left.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -709,7 +649,7 @@ fieldset {
   left: 20px;
 }
 
-.next-slide{
+.next-slide {
   right: 15px;
 }
 
@@ -718,9 +658,9 @@ fieldset {
   bottom: 32px;
   left: 0;
   right: 0;
-
   text-align: center;
 }
+
 .pg-button {
   display: inline-block;
   vertical-align: middle;
@@ -729,7 +669,6 @@ fieldset {
   padding: 0;
   margin: 0;
   margin-right: 5px;
-
   border: 2px solid white;
   border-radius: 50%;
   background-color: white;
@@ -745,38 +684,31 @@ fieldset {
 
 .content-header {
   box-sizing: border-box;
-
   position: relative;
   width: 940px;
   margin-bottom: 20px;
   padding-top: 30px;
   padding-bottom: 29px;
-
   background-color: #f9f5f0;
 }
 
 .content-header h2 {
   display: inline;
   margin-left: 28px;
-
   font-size: 30px;
   line-height: 30px;
- 
   text-transform: uppercase;
   vertical-align: middle;
   font-weight: 400;
-
   color: #32425c;
 }
 
 .content-header a {
   position: absolute;
   display: block;
-  
   right: 24px;
   bottom: 26px;
   width: 253px;
-
   text-align: center;
 }
 
@@ -787,11 +719,9 @@ fieldset {
 .goods-list {
   display: flex;
   flex-wrap: wrap;
-
   width: 940px;
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -799,13 +729,10 @@ fieldset {
   position: relative;
   display: flex;
   flex-direction: column;
-  
   width: 218px;
   min-height: 316px;
   margin-bottom: 20px;
-  
   border: 1px solid #eaeaea;
-  
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
@@ -841,9 +768,7 @@ fieldset {
   display: block;
   position: relative;
   margin-left: 41px;
-
   border-radius: 5px;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -852,14 +777,12 @@ fieldset {
 
 .buy-button {
   position: relative;
-
   width: 86px;
   min-height: 28px;
   padding-left: 49px;
   padding-top: 10px;
   margin-top: 44px;
   margin-bottom: 7px;
-
   background-color: #63a63e;
   box-shadow: inset 0 -5px 0 0 #367315;
   color: white;
@@ -867,18 +790,14 @@ fieldset {
 
 .buy-button::before {
   content: '';
-
   position: absolute;
-
   top: 11px;
   left: 12px;
   width: 15px;
   height: 15px;
-
   background-image: url(../img/cart-icon.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
   opacity: 0.3;
 }
 
@@ -894,19 +813,15 @@ fieldset {
   padding-top: 9px;
   padding-left: 33px;
   border: 3px solid #63a63e;
-
-
   background-color: white;
   color: #32425c;
 }
 
 .goods-list h3 {
   order: 3;
-
   width: 170px;
   margin: 0 auto;
   margin-top: 9px;
-
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -916,7 +831,6 @@ fieldset {
   order: 4;
   margin-top: auto;
   margin-left: 78px;
-
   color: #a9a9a9;
   text-decoration: line-through;
 }
@@ -924,35 +838,20 @@ fieldset {
 .new-price {
   order: 5;
   position: relative;
-  width: 85px;
+  width: 104px;
   min-height: 29px;
   margin-left: 42px;
-  margin-top: auto;
+  margin-top: 10px;
   margin-bottom: 20px;
   padding-left: 36px;
   padding-top: 9px;
-
   border-radius: 5px 0 0 5px;
-
   text-align: left;
-
-  background-color: #ee3643;
+  font-weight: 700;
+  background-image: url("../img/red-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   color: white;
-}
-
-.new-price::after {
-  position: absolute;
-  content: '';
-  display: inline-block;
-  top: 0;
-  right: -38px;
-  width: 0;
-  height: 0;
-  border: 19px solid black;
-  border-left-color: #ee3643;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
 }
 
 .goods-item:hover,
@@ -966,8 +865,8 @@ fieldset {
   display: none;
 }
 
-.goods-item a:focus ~ img {
-  display: none;
+.goods-item a:focus~img {
+  z-index: -1;
 }
 
 .buy-button:hover,
@@ -1001,21 +900,17 @@ fieldset {
 .manufacturers {
   display: flex;
   flex-wrap: wrap;
-  
   width: 940px;
   margin-bottom: 65px;
-  
 }
 
 .manufacturers a {
   box-sizing: content-box;
   position: relative;
-  
   width: 218px;
   height: 143px;
   margin-right: 20px;
   margin-bottom: 20px;
-
   border: 1px solid #eaeaea;
 }
 
@@ -1053,8 +948,7 @@ fieldset {
 .servises-wrapper {
   width: 100%;
   min-height: 522px;
-  margin-bottom: 82px;
-
+  margin-bottom: 79px;
   background-color: #f4f8f9;
 }
 
@@ -1069,12 +963,21 @@ fieldset {
 }
 
 .service-item {
-  display: none;
+  position: absolute;
+  z-index: -1;
+}
+
+.service-item p {
+  position: relative;
+  z-index: 1;
+}
+
+.service-item-current {
+  z-index: 0;
 }
 
 .services p {
   margin-bottom: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1098,54 +1001,66 @@ fieldset {
 .services-header h3 {
   margin-top: 0;
   margin-bottom: 25px;
-
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .services-control {
+  position: relative;
   margin: 0;
   margin-bottom: 98px;
   padding: 0;
   list-style: none;
 }
 
-.services-control label{
+.services-control::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -45px;
+  z-index: 1;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.services-pg-item {
   display: block;
   width: 218px;
   min-height: 46px;
   padding-top: 16px;
   padding-left: 22px;
-  
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-
   background-color: #32425c;
   color: white;
-  box-shadow:
-    inset 0 1px 0 0 #405069,
-    inset 0 -1px 0 0 #293449 
-  ;
+  box-shadow: inset 0 1px 0 0 #405069, inset 0 -1px 0 0 #293449;
+}
+
+.services-pg-item-current {
+  background-color: white;
+  color: #32425c;
+  box-shadow: none;
 }
 
 .services-list {
+  position: relative;
   margin: 0;
   margin-left: 80px;
   margin-bottom: 98px;
   padding: 0;
-  
   list-style: none;
 }
 
 .services-list h3 {
   margin-top: 0;
   margin-bottom: 23px;
-
   font-size: 36px;
   line-height: 36px;
-
   color: #32425c;
 }
 
@@ -1154,17 +1069,28 @@ fieldset {
   min-height: 26px;
   padding-top: 12px;
   margin-top: 25px;
-
   font-size: 14px;
   line-height: 18px;
   text-align: center;
 }
 
+.service-delivery {
+  width: 275px;
+}
+
+.service-warranty {
+  width: 374px;
+}
+
+.service-credit {
+  width: 280px;
+}
+
 .service-delivery::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: 2px;
+  top: 23px;
+  right: -343px;
   width: 468px;
   height: 261px;
   background-image: url(../img/delivery.png);
@@ -1175,8 +1101,8 @@ fieldset {
 .service-warranty::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: -8px;
+  top: 0;
+  right: -254px;
   width: 389px;
   height: 283px;
   background-image: url(../img/warranty.png);
@@ -1187,80 +1113,13 @@ fieldset {
 .service-credit::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  right: -10px;
+  top: 0;
+  right: -350px;
   width: 465px;
   height: 285px;
   background-image: url(../img/credit.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-
-.slider-radio:checked + div {
-  display: block;
-}
-
-.services-control label:hover,
-.services-control label:focus {
-  background-color: #293449;
-}
-
-.service-delivery::before {
-  content: 'Доставка';
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 218px;
-  min-height: 46px;
-  padding-top: 16px;
-  padding-left: 22px;
-  
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-  
-  background-color: white;
-  color: #32425c;
-}
-
-.service-warranty::before {
-  content: 'Гарантия';
-  position: absolute;
-  display: block;
-  top: 62px;
-  left: 0;
-  width: 218px;
-  min-height: 46px;
-  padding-top: 16px;
-  padding-left: 22px;
-  
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-
-  
-  background-color: white;
-  color: #32425c;
-}
-
-.service-credit::before {
-  content: 'Кредит';
-  position: absolute;
-  display: block;
-  top: 124px;
-  left: 0;
-  width: 218px;
-  min-height: 46px;
-  padding-top: 16px;
-  padding-left: 22px;
-  
-  font-size: 21px;
-  line-height: 30px;
-  font-weight: 700;
-  
-  background-color: white;
-  color: #32425c;
 }
 
 /*Конец стилей для блока сервисов*/
@@ -1292,7 +1151,6 @@ fieldset {
 .about-us h3 {
   margin-top: 0;
   margin-bottom: 25px;
-
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1301,7 +1159,6 @@ fieldset {
 
 .about-us p {
   margin-bottom: 23px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1331,7 +1188,6 @@ fieldset {
   position: relative;
   padding-left: 36px;
   margin-bottom: 20px;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
@@ -1339,14 +1195,12 @@ fieldset {
 
 .delivery-list li::before {
   content: '';
-  
   position: absolute;
   top: 50%;
   margin-top: -1px;
   left: 0;
   width: 25px;
   height: 2px;
-
   background-color: #ee3643;
 }
 
@@ -1357,10 +1211,8 @@ fieldset {
   bottom: 0;
 }
 
-
 .about-us .button-red {
   position: absolute;
-
   font-family: "Cuprum", Arial, sans-serif;
   text-align: center;
 }
@@ -1384,8 +1236,7 @@ fieldset {
 .footer-top {
   width: 100%;
   min-height: 193px;
-  margin-top: 86.5px;
-
+  margin-top: 88px;
   background-color: #32425c;
 }
 
@@ -1402,10 +1253,8 @@ fieldset {
 
 .footer-bottom {
   width: 100%;
-
   font-size: 16px;
   line-height: 18px;
-
   background-color: #293449;
   color: white;
 }
@@ -1421,7 +1270,6 @@ fieldset {
   height: 68px;
   padding-top: 15px;
   padding-left: 42px;
-
   font-size: 30px;
 }
 
@@ -1430,12 +1278,12 @@ fieldset {
   padding: 0;
   margin: 0;
   margin-top: 37px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   margin-left: auto;
 }
 
 .footer-navigation li {
-  margin-left: 60px;
+  margin-left: 59px;
 }
 
 .footer-promo-list {
@@ -1457,6 +1305,7 @@ fieldset {
 .main-footer address {
   font-size: 18px;
   line-height: 24px;
+  padding-left: 3px;
   text-decoration: none;
   font-style: normal;
   color: white;
@@ -1476,8 +1325,10 @@ fieldset {
   line-height: 24px;
 }
 
-.main-footer ul a:hover,
-.main-footer ul a:focus,
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.footer-promo-list a:hover,
+.footer-promo-list a:focus,
 .footer-bottom a:hover,
 .footer-bottom a:focus {
   text-decoration: underline;
@@ -1489,6 +1340,7 @@ fieldset {
 
 .footer-navigation a:active {
   color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 
 .footer-promo-list a,
@@ -1498,7 +1350,12 @@ fieldset {
 
 .footer-promo-list a:active,
 .footer-bottom a:active {
-  color: rgba(255, 209, 128, 0.5);;
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.footer-bottom a:active {
+  color: #ee3643;
 }
 
 .footer-bottom .container {
@@ -1508,12 +1365,14 @@ fieldset {
 
 .copyright {
   width: 230px;
+  margin-left: 1px;
+  margin-top: 2px;
   font-size: 16px;
   line-height: 18px;
 }
 
 .social-buttons {
-  margin-left: 160px;
+  margin-left: 159px;
   margin-right: auto;
   margin-bottom: 31px;
 }
@@ -1531,22 +1390,18 @@ fieldset {
   width: 40px;
   height: 40px;
   margin-right: 5px;
-
   border-radius: 50%;
-
   background-color: #212a3a;
 }
 
 .social-button::before {
   content: '';
-
   position: absolute;
   margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
@@ -1565,13 +1420,12 @@ fieldset {
 
 .footer-bottom p {
   width: 140px;
-  margin-top: 0;
+  margin-top: 2px;
 }
 
 .footer-bottom p:last-of-type {
   width: 111px;
   margin-left: 48px;
-  margin-right: 2px;
 }
 
 .social-button:hover,
@@ -1585,7 +1439,6 @@ fieldset {
 
 /*Конец стилей для футера*/
 
-
 /*Стили для всплывающих окон*/
 
 .modal-contact-form {
@@ -1594,22 +1447,13 @@ fieldset {
   left: 0;
   right: 0;
   top: 150px;
-
   z-index: 6;
-
   box-sizing: border-box;
-
   width: 620px;
   padding: 0 80px;
   padding-top: 54px;
   padding-bottom: 37px;
-
-  box-shadow: 
-    inset 0 7px 0 0 #ff5257,
-    inset 0 -112px 0 0 #f4f4f4,
-    0 20px 40px 0 rgba(0, 0, 0, 0.75)
-  ;
-
+  box-shadow: inset 0 7px 0 0 #ff5257, inset 0 -112px 0 0 #f4f4f4, 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   background-color: white;
 }
 
@@ -1622,7 +1466,6 @@ fieldset {
 .write-us-form span {
   display: block;
   margin-bottom: 10px;
-  
   font-size: 18px;
   line-height: 18px;
 }
@@ -1630,13 +1473,10 @@ fieldset {
 .write-us-form textarea,
 .write-us-form input {
   box-sizing: border-box;
-  
   padding: 6px 14px;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-
   border: 2px solid #dee3e4;
   border-radius: 5px;
 }
@@ -1652,7 +1492,6 @@ fieldset {
   width: 460px;
   min-height: 114px;
   margin-bottom: 69px;
-
   resize: none;
 }
 
@@ -1676,10 +1515,8 @@ fieldset {
   position: absolute;
   top: 16px;
   right: 12px;
-
   width: 21px;
   height: 21px;
-
   background-color: transparent;
   border: none;
 }
@@ -1692,27 +1529,25 @@ fieldset {
   top: 150px;
   width: 940px;
   height: 446px;
-
   z-index: 6;
-
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   background-color: white;
+  background-image: url("../img/big-map.png");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: '';
   position: absolute;
-
   margin: auto;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-
   width: 27px;
   height: 3px;
-
   background-color: #ff5257;
 }
 
@@ -1737,40 +1572,27 @@ fieldset {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
   position: fixed;
   margin: auto;
   left: 0;
   right: 0;
   top: 150px;
-
   z-index: 6;
-
   box-sizing: border-box;
-
   width: 620px;
   padding: 0 80px;
   padding-top: 43px;
   padding-bottom: 32px;
-
   font-family: "Cuprum", Arial, sans-serif;
-
-  box-shadow: 
-    inset 0 7px 0 0 #ff5257,
-    inset 0 -112px 0 0 #f4f4f4,
-    0 20px 40px 0 rgba(0, 0, 0, 0.75)
-  ;
-
+  box-shadow: inset 0 7px 0 0 #ff5257, inset 0 -112px 0 0 #f4f4f4, 0 20px 40px 0 rgba(0, 0, 0, 0.75);
   background-color: white;
 }
 
 .modal-cart p {
   position: relative;
-
   width: 100%;
   padding-left: 100px;
   margin-bottom: 106px;
-
   font-size: 30px;
   line-height: 30px;
 }
@@ -1782,7 +1604,6 @@ fieldset {
   left: 0;
   width: 66px;
   height: 66px;
-
   background-image: url(../img/form-1.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1790,7 +1611,6 @@ fieldset {
 
 .modal-cart .button-red {
   width: 220px;
-
   text-align: center;
 }
 
@@ -1817,13 +1637,11 @@ fieldset {
 
 .modal-show {
   display: block;
-
   animation: bounce 0.6s;
 }
 
 .cart-show {
   display: flex;
-
   animation: bounce 0.6s;
 }
 
@@ -1854,15 +1672,12 @@ fieldset {
   0% {
     transform: translateY(-2000px);
   }
-
   70% {
     transform: translateY(30px);
   }
-
   90% {
     transform: translateY(-10px);
   }
-
   100% {
     transform: translateY(0);
   }
@@ -1873,7 +1688,6 @@ fieldset {
   100% {
     transform: translateX(0);
   }
-
   10%,
   30%,
   50%,
@@ -1881,7 +1695,6 @@ fieldset {
   90% {
     transform: translateX(-10px);
   }
-
   20%,
   40%,
   60%,
@@ -1889,28 +1702,6 @@ fieldset {
     transform: translateX(10px);
   }
 }
-
-@keyframes map-shake {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  30% {
-    transform: translateY(-10px);
-  }
-
-  60% {
-    transform: translateY(10px);
-  }
-}
-
-.map-link:hover,
-.map-link:focus {
-  display: block;
-  animation: map-shake 0.6s;
-}
-
 
 /*Конец анимаций всплывающих окон*/
 
@@ -1947,10 +1738,8 @@ fieldset {
   width: 254px;
   padding-left: 45px;
   margin-bottom: 9px;
-  
-  font-size: 21px; 
+  font-size: 21px;
   line-height: 45px;
-
   background-color: white;
 }
 
@@ -1964,9 +1753,7 @@ fieldset {
   position: absolute;
   top: 22.5px;
   right: 10px;
-
   width: 20px;
-
   background-color: transparent;
 }
 
@@ -2019,14 +1806,11 @@ fieldset {
 
 .settings::before {
   content: '';
-  
   position: absolute;
   left: -21px;
   top: 8px;
-
   width: 4px;
   height: 3px;
-
   border-radius: 50%;
   background-color: #32425c;
 }
@@ -2043,7 +1827,7 @@ fieldset {
 .settings a:hover,
 .my-orders a:focus,
 .settings a:focus {
- color: #ee3643;
+  color: #ee3643;
 }
 
 .my-orders a:active,
@@ -2059,7 +1843,6 @@ fieldset {
   margin: 0;
   margin-bottom: 21px;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -2070,16 +1853,13 @@ fieldset {
   color: black;
 }
 
-
 .breadcrumbs li::before {
   content: '';
   display: inline-block;
   vertical-align: middle;
-
   width: 8px;
   height: 12px;
   margin: 0 16px;
-
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -2092,10 +1872,8 @@ fieldset {
 .breadcrumbs li:first-child a::before {
   content: '';
   display: block;
-  
   width: 14px;
   height: 15px;
-
   background-image: url(../img/icon-home.svg);
   background-repeat: no-repeat;
   background-position: 50% 3px;
@@ -2106,19 +1884,16 @@ fieldset {
 /*Заголовок каталога*/
 
 .catalog-header {
-
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 28px;
   margin: 0;
   margin-bottom: 20px;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
-
   color: #32425c;
   background-color: #f2f6f8;
 }
@@ -2139,7 +1914,7 @@ fieldset {
 
 .sorting-button a {
   color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dashed #ee3643;
+  border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-button a:hover,
@@ -2158,7 +1933,6 @@ fieldset {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
 }
@@ -2166,15 +1940,12 @@ fieldset {
 .sorting {
   display: flex;
   list-style: none;
-
   width: 681px;
   margin: 0;
   padding-left: 19px;
   padding-top: 9px;
   padding-bottom: 9px;
-
   background-color: #f7f3ec;
-
   border-radius: 5px;
 }
 
@@ -2207,7 +1978,6 @@ fieldset {
   bottom: 0;
   left: 0;
   width: 0;
-
   border-right: 5.5px solid transparent;
   border-left: 5.5px solid transparent;
   border-top: 10px solid transparent;
@@ -2223,6 +1993,10 @@ fieldset {
   transform: rotate(180deg);
 }
 
+.sorting-arrow-current a {
+  border-bottom-color: #ee3643;
+}
+
 .sorting-arrow a:hover,
 .sorting-arrow a:focus {
   border-bottom-color: black;
@@ -2232,14 +2006,12 @@ fieldset {
   border-bottom-color: #ee3643;
 }
 
-.sorting-layout > span {
+.sorting-layout>span {
   width: 201px;
   padding-left: 19px;
   padding-top: 11px;
   padding-bottom: 8px;
-
   background-color: #f7f3ec;
-
   border-radius: 5px;
 }
 
@@ -2258,7 +2030,6 @@ fieldset {
 .catalog-content-layout {
   display: flex;
   justify-content: space-between;
-
   margin-bottom: 60px;
 }
 
@@ -2271,7 +2042,6 @@ fieldset {
   width: 220px;
   height: 80px;
   margin-bottom: 5px;
-
   background-color: #f7f3ec;
   border-radius: 5px;
 }
@@ -2286,7 +2056,6 @@ fieldset {
   bottom: 0;
   right: 0;
   left: 0;
-  
   background-color: #00ca74;
 }
 
@@ -2297,16 +2066,10 @@ fieldset {
   top: 30px;
   margin: 0;
   padding: 0;
-
   background-color: #ababab;
-  
   border: none;
   border-radius: 50%;
-
-  box-shadow: 
-    inset 0px 0px 0 8px white,
-    0 2px #e0ddd8  
-  ;
+  box-shadow: inset 0px 0px 0 8px white, 0 2px #e0ddd8;
 }
 
 .price-range-button:first-child {
@@ -2325,12 +2088,9 @@ fieldset {
 .price-range-input input {
   width: 95px;
   height: 38px;
-  
   border: none;
   border-radius: 5px;
-
   text-align: center;
-
   background-color: #f7f3ec;
 }
 
@@ -2340,7 +2100,6 @@ fieldset {
 
 .filters {
   width: 220px;
-
   font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -2361,55 +2120,69 @@ fieldset {
 
 .filters label {
   position: relative;
-  
   padding-left: 35px;
-
   font-size: 15px;
   line-height: 20px;
 }
 
-.manufacturers-form-list label::after {
-  content: '';
+.checkbox-indicator {
   position: absolute;
+  width: 20px;
+  height: 20px;
   left: 0;
   top: 0;
-
   width: 23px;
   height: 23px;
-  
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  opacity: 0.8;
 }
 
-.manufacturers-form-list input:checked ~ ::after {
-  width: 27px;
+.manufacturers-form-list input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
+.manufacturers-form-list input:checked + .checkbox-indicator {
+  width: 27px;
   background-image: url(../img/checkbox-on.svg);
+}
+
+.manufacturers-form-list input:disabled + .checkbox-indicator {
+  opacity: 0.3;
 }
 
 .manufacturers-form {
   min-height: 237x;
-
   border-bottom: 1px solid #e5e5e5;
 }
 
-.power-type label::after {
-  content: '';
+.radio-indicator {
   position: absolute;
   left: 0;
   top: -3px;
-  
   width: 25px;
   height: 25px;
-  
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  opacity: 0.8;
 }
 
-.power-type input:checked ~ ::after {
+.power-type input[type="radio"]:focus + .radio-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.power-type input:checked + .radio-indicator {
   background-image: url(../img/radio-on.svg);
+}
+
+.power-type input:disabled + .radio-indicator {
+  opacity: 0.3;
 }
 
 .filters .power-form {
@@ -2418,12 +2191,10 @@ fieldset {
 
 .filters legend {
   margin-bottom: 22px;
-
   font-size: 17px;
   line-height: 17px;
   text-transform: uppercase;
   font-weight: 700;
-
   color: black;
 }
 
@@ -2432,7 +2203,6 @@ fieldset {
   list-style: none;
   margin: 0;
   padding: 0;
-
   font-size: 15px;
   line-height: 20px;
   text-transform: uppercase;
@@ -2445,14 +2215,11 @@ fieldset {
 .show-button {
   width: 138px;
   min-height: 38px;
-
   font-family: inherit;
   font-size: 13px;
   line-height: 38px;
   text-transform: uppercase;
-  
   border-radius: 5px;
-
   border: 1px solid #e5e5e5;
   background-color: white;
 }
@@ -2464,6 +2231,7 @@ fieldset {
 .pagination-layout {
   display: flex;
   margin-top: 32px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .pagination-list {
@@ -2474,30 +2242,28 @@ fieldset {
 }
 
 .pagination-list li {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .pagination-item a,
 .pagination-control {
   display: block;
-  width: 38px;
-
+  width: 36px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
-
   font-size: 13px;
   line-height: 38px;
   text-align: center;
-  
   color: black;
 }
 
 .pagination-control {
-  width: 140px;
-
+  width: 138px;
   text-transform: uppercase;
 }
 
+.show-button:hover,
+.show-button:focus,
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-control:hover,
@@ -2505,6 +2271,7 @@ fieldset {
   border-color: #bdc6ca;
 }
 
+.show-button:active,
 .pagination-item a:active,
 .pagination-control:active {
   border-color: #ee3643;
@@ -2524,20 +2291,17 @@ fieldset {
   width: 100%;
   min-height: 261px;
   margin-bottom: -13px;
-
   background-color: #f2f6f8;
 }
 
 .information {
   padding-top: 65px;
-
   font-family: "PT Sans", Arial, sans-serif;
 }
 
 .information h2 {
   margin-top: 0;
   margin-bottom: 25px;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -2552,7 +2316,6 @@ fieldset {
 
 /*Конец стилей для блока информации*/
 
-
 /*Стили для футера каталога*/
 
 .footer-catalog {
@@ -2561,30 +2324,27 @@ fieldset {
 
 /*Конец стилей для футера каталога*/
 
-
 .new-flag::before {
   content: '';
-
   position: absolute;
   top: 0;
   right: 0;
   width: 60px;
   height: 59px;
-
   z-index: 5;
-
   background-image: url(../img/new-flag.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
 .visually-hidden {
-	position: absolute;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0;
-	border:0;
-	height: 1px; 
-	width: 1px; 
-	overflow: hidden;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
