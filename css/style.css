@@ -141,7 +141,7 @@ a {
   background-color: #212a3a;
 }
 
-.search-input:hover + svg path {
+.search-input:hover+svg path {
   fill: white;
 }
 
@@ -149,7 +149,7 @@ a {
   background-color: white;
 }
 
-.search-input:focus + svg path {
+.search-input:focus+svg path {
   fill: #ee3643;
 }
 
@@ -684,17 +684,26 @@ a {
 
 .content-header {
   box-sizing: border-box;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   width: 940px;
   margin-bottom: 20px;
-  padding-top: 30px;
-  padding-bottom: 29px;
+  padding-left: 28px;
+  padding-right: 25px;
+  padding-top: 25px;
   background-color: #f9f5f0;
 }
 
+.text-content {
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 .content-header h2 {
-  display: inline;
-  margin-left: 28px;
+  display: block;
+  margin: 0;
+  margin-top: 6px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -704,11 +713,11 @@ a {
 }
 
 .content-header a {
-  position: absolute;
   display: block;
-  right: 24px;
-  bottom: 26px;
   width: 253px;
+  height: 38px;
+  margin-left: auto;
+  margin-bottom: 26px;
   text-align: center;
 }
 
@@ -833,6 +842,7 @@ a {
   margin-left: 78px;
   color: #a9a9a9;
   text-decoration: line-through;
+  font-weight: 700;
 }
 
 .new-price {
@@ -963,8 +973,8 @@ a {
 }
 
 .service-item {
-  position: absolute;
-  z-index: -1;
+  display: none;
+  position: relative;
 }
 
 .service-item p {
@@ -973,7 +983,7 @@ a {
 }
 
 .service-item-current {
-  z-index: 0;
+  display: block;
 }
 
 .services p {
@@ -1672,22 +1682,27 @@ a {
   0% {
     transform: translateY(-2000px);
   }
+
   70% {
     transform: translateY(30px);
   }
+
   90% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
 
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
@@ -1695,6 +1710,7 @@ a {
   90% {
     transform: translateX(-10px);
   }
+
   20%,
   40%,
   60%,
@@ -1910,6 +1926,17 @@ a {
 
 .sorting {
   list-style: none;
+  width: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  margin-left: 139px;
+  padding: 0;
+}
+
+.sorting-button {
+  width: 120px;
 }
 
 .sorting-button a {
@@ -1937,9 +1964,9 @@ a {
   text-transform: uppercase;
 }
 
-.sorting {
+.sorting-wrapper {
   display: flex;
-  list-style: none;
+  position: relative;
   width: 681px;
   margin: 0;
   padding-left: 19px;
@@ -1949,22 +1976,6 @@ a {
   border-radius: 5px;
 }
 
-.sorting li:first-child {
-  margin-right: 140px;
-}
-
-.sorting-price {
-  margin-right: 70px;
-}
-
-.sorting-type {
-  margin-right: 66px;
-}
-
-.sorting-functional {
-  margin-right: 46px;
-}
-
 .sorting-arrow {
   position: relative;
   width: 11px;
@@ -1972,11 +1983,9 @@ a {
   margin: auto 0;
 }
 
-.sorting-arrow a {
+.sorting-arrow {
   position: absolute;
-  display: block;
-  bottom: 0;
-  left: 0;
+  top: 0;
   width: 0;
   border-right: 5.5px solid transparent;
   border-left: 5.5px solid transparent;
@@ -1986,23 +1995,26 @@ a {
 
 .sorting-arrow-up {
   margin-right: 21px;
+  right: 29px;
+  top: -6px;
 }
 
-.sorting-arrow-down a {
-  top: 0;
+.sorting-arrow-down {
+  top: 14px;
+  right: 17px;
   transform: rotate(180deg);
 }
 
-.sorting-arrow-current a {
+.sorting-arrow-current {
   border-bottom-color: #ee3643;
 }
 
-.sorting-arrow a:hover,
-.sorting-arrow a:focus {
+.sorting-arrow:hover,
+.sorting-arrow:focus {
   border-bottom-color: black;
 }
 
-.sorting-arrow a:active {
+.sorting-arrow:active {
   border-bottom-color: #ee3643;
 }
 
@@ -2139,18 +2151,18 @@ a {
   opacity: 0.8;
 }
 
-.manufacturers-form-list input[type="checkbox"]:focus + .checkbox-indicator {
+.manufacturers-form-list input[type="checkbox"]:focus+.checkbox-indicator {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.manufacturers-form-list input:checked + .checkbox-indicator {
+.manufacturers-form-list input:checked+.checkbox-indicator {
   width: 27px;
   background-image: url(../img/checkbox-on.svg);
 }
 
-.manufacturers-form-list input:disabled + .checkbox-indicator {
+.manufacturers-form-list input:disabled+.checkbox-indicator {
   opacity: 0.3;
 }
 
@@ -2171,17 +2183,17 @@ a {
   opacity: 0.8;
 }
 
-.power-type input[type="radio"]:focus + .radio-indicator {
+.power-type input[type="radio"]:focus+.radio-indicator {
   border-color: #663d15;
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.power-type input:checked + .radio-indicator {
+.power-type input:checked+.radio-indicator {
   background-image: url(../img/radio-on.svg);
 }
 
-.power-type input:disabled + .radio-indicator {
+.power-type input:disabled+.radio-indicator {
   opacity: 0.3;
 }
 
@@ -2247,8 +2259,10 @@ a {
 
 .pagination-item a,
 .pagination-control {
+  box-sizing: border-box;
+  padding: 0 10px;
   display: block;
-  width: 36px;
+  min-width: 38px;
   border: 1px solid #e5e5e5;
   border-radius: 5px;
   font-size: 13px;
